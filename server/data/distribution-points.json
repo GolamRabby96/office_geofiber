@@ -4142,5 +4142,3533 @@
     "longitude": 91.788522,
     "address": "",
     "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.8325,
+    "name": "Banani Redundend",
+    "latitude": 23.789514,
+    "longitude": 90.403789,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.8936,
+    "name": "R#21,H-34  Autograph tower back site",
+    "latitude": 23.79486,
+    "longitude": 90.40421,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.319,
+    "name": "Green Delta",
+    "latitude": 23.780407,
+    "longitude": 90.407726,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.5254,
+    "name": "Mohakahli Dokkin para",
+    "latitude": 23.775785,
+    "longitude": 90.401138,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.691,
+    "name": "Shadinota Tower Splitter",
+    "latitude": 23.775667,
+    "longitude": 90.390268,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.2495,
+    "name": "UGC Splitter Mohakhali",
+    "latitude": 23.779731,
+    "longitude": 90.374514,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.527,
+    "name": "Nakal Para",
+    "latitude": 23.7700450732058,
+    "longitude": 90.4000690122042,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.7832,
+    "name": "Hosaf Tower-Mohakhali",
+    "latitude": 23.781057,
+    "longitude": 90.400489,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.228,
+    "name": "SKS tower gate",
+    "latitude": 23.778245,
+    "longitude": 90.39718,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.202,
+    "name": "Tejgaon-1",
+    "latitude": 23.767967,
+    "longitude": 90.405508,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.0332,
+    "name": "Shanta Western ",
+    "latitude": 23.873969,
+    "longitude": 90.390972,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643520.1396,
+    "name": "Tejgaon-2",
+    "latitude": 23.768328,
+    "longitude": 90.402939,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9636,
+    "name": "Rahman Regnum Center",
+    "latitude": 23.770156,
+    "longitude": 90.408576,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2456,
+    "name": "Shanta Furrum",
+    "latitude": 23.769214,
+    "longitude": 90.406714,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7725,
+    "name": "Road 5 & 8 Crossing",
+    "latitude": 23.788931,
+    "longitude": 90.403761,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6243,
+    "name": "Road 10 & 11 Crossing",
+    "latitude": 23.790686,
+    "longitude": 90.406053,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4495,
+    "name": "Star kabab",
+    "latitude": 23.793321,
+    "longitude": 90.403098,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3367,
+    "name": "Road  35/44 Crossing",
+    "latitude": 23.791844,
+    "longitude": 90.413188,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6567,
+    "name": "Road  36/44 Crossing",
+    "latitude": 23.791695,
+    "longitude": 90.414427,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3782,
+    "name": "Road  42/43 Crossing",
+    "latitude": 23.791574,
+    "longitude": 90.412049,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6494,
+    "name": "Road 24/23 more",
+    "latitude": 23.7945586323933,
+    "longitude": 90.406690364165,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5496,
+    "name": "Road 24/23 more",
+    "latitude": 23.7945586323933,
+    "longitude": 90.406690364165,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5364,
+    "name": "Road 25/23 more",
+    "latitude": 23.796667,
+    "longitude": 90.403329,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8955,
+    "name": "Gul-1,Road-8",
+    "latitude": 23.778145,
+    "longitude": 90.416179,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7314,
+    "name": "CHA 99 Badda",
+    "latitude": 23.78059,
+    "longitude": 90.423755,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0535,
+    "name": "Badda Genarel Hospital",
+    "latitude": 23.784653,
+    "longitude": 90.425675,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9578,
+    "name": "Tropical Molla Tower",
+    "latitude": 23.7793525,
+    "longitude": 90.4255801,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4358,
+    "name": "Azad morjid",
+    "latitude": 23.790483,
+    "longitude": 90.413403,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0776,
+    "name": "Gulshan-2 -R-48/Main Road",
+    "latitude": 23.793964,
+    "longitude": 90.411976,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0034,
+    "name": "Post office,Gulshan-1",
+    "latitude": 23.781115,
+    "longitude": 90.414426,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8757,
+    "name": "Gulshan Grace-CWS C-8",
+    "latitude": 23.78041,
+    "longitude": 90.4144651,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6025,
+    "name": "137/138 Road more",
+    "latitude": 23.777992,
+    "longitude": 90.41769,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6323,
+    "name": "114/113 road more",
+    "latitude": 23.7886290876176,
+    "longitude": 90.4179823175384,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1208,
+    "name": "Road 24/28 more",
+    "latitude": 23.7833698035187,
+    "longitude": 90.4160317736699,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.609,
+    "name": "Level-3",
+    "latitude": 23.772711,
+    "longitude": 90.416204,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7207,
+    "name": "Ground Floor",
+    "latitude": 23.772711,
+    "longitude": 90.416204,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1106,
+    "name": "Level-4",
+    "latitude": 23.772711,
+    "longitude": 90.416204,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4053,
+    "name": "Level-1",
+    "latitude": 23.772711,
+    "longitude": 90.416204,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.386,
+    "name": "Chowdory Para",
+    "latitude": 23.752069,
+    "longitude": 90.414011,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9707,
+    "name": "DIT Road West Rampura",
+    "latitude": 23.761277,
+    "longitude": 90.419255,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3037,
+    "name": "DIT Road West Rampura",
+    "latitude": 23,
+    "longitude": 90,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1475,
+    "name": "DIT Road West Rampura",
+    "latitude": 23.776888,
+    "longitude": 90.425691,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2654,
+    "name": "South Banasree",
+    "latitude": 23.757668,
+    "longitude": 90.441535,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5662,
+    "name": "Nandipara",
+    "latitude": 23.745007,
+    "longitude": 90.444223,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.347,
+    "name": "South Banasree D Block",
+    "latitude": 23.762555,
+    "longitude": 90.430929,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.691,
+    "name": "Bashtola",
+    "latitude": 23.792283,
+    "longitude": 90.424617,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0315,
+    "name": "Post office",
+    "latitude": 23.781628,
+    "longitude": 90.414697,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2754,
+    "name": "Road 75/80",
+    "latitude": 23.801357,
+    "longitude": 90.415493,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2908,
+    "name": "Road 51/7",
+    "latitude": 23.7961,
+    "longitude": 90.412099,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6013,
+    "name": "Road  70/63 crossing",
+    "latitude": 23.801986,
+    "longitude": 90.408011,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.747,
+    "name": "Road-16-Banani",
+    "latitude": 23.797149,
+    "longitude": 90.405014,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.463,
+    "name": "Hadi Tower East site Road-50",
+    "latitude": 23.793899,
+    "longitude": 90.410611,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9165,
+    "name": "IV Rahman Home",
+    "latitude": 23.790509,
+    "longitude": 90.418623,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2646,
+    "name": "UN Road",
+    "latitude": 23.803011,
+    "longitude": 90.418413,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0476,
+    "name": "chairman sir home 32/24mor",
+    "latitude": 23.786305,
+    "longitude": 90.416056,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2766,
+    "name": "Road 5/2 more",
+    "latitude": 23.77683,
+    "longitude": 90.415201,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3079,
+    "name": "Glass House",
+    "latitude": 23.779232,
+    "longitude": 90.416838,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9475,
+    "name": "Bashundhara-Gate",
+    "latitude": 23.812833,
+    "longitude": 90.427028,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5388,
+    "name": "Natun Bazar Mor",
+    "latitude": 23.797656,
+    "longitude": 90.423858,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6401,
+    "name": "Shelter Housing Limited",
+    "latitude": 23.798792,
+    "longitude": 90.433184,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3328,
+    "name": "DBBL gate / evar care Hospital road",
+    "latitude": 23.808871,
+    "longitude": 90.43067,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.467,
+    "name": "79/82 Road",
+    "latitude": 23.802187,
+    "longitude": 90.414425,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0073,
+    "name": "Gulshan-2 -R-90/91",
+    "latitude": 23.7961491,
+    "longitude": 90.415005,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3994,
+    "name": "Park Road",
+    "latitude": 23.802624,
+    "longitude": 90.421605,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5027,
+    "name": "Kha 66/1 Kuril",
+    "latitude": 23.816219,
+    "longitude": 90.420935,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.445,
+    "name": "JCX Tower",
+    "latitude": 23.814325,
+    "longitude": 90.438402,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0635,
+    "name": "Padma Oil Gate",
+    "latitude": 23.837821,
+    "longitude": 90.414214,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3293,
+    "name": "Nitol Niloy Tower ",
+    "latitude": 23.834576,
+    "longitude": 90.418128,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8503,
+    "name": "R#3 more",
+    "latitude": 23.829472,
+    "longitude": 90.418927,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8071,
+    "name": "Water Pump",
+    "latitude": 23.8305727562843,
+    "longitude": 90.4302221347674,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.815,
+    "name": "VVIP Gate",
+    "latitude": 23.846603,
+    "longitude": 90.407307,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0913,
+    "name": "Airport 8 No Gate",
+    "latitude": 23.853187,
+    "longitude": 90.402107,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.205,
+    "name": "House Building",
+    "latitude": 23.87395,
+    "longitude": 90.399226,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1836,
+    "name": "Shanto Mariam Institute",
+    "latitude": 23.873863,
+    "longitude": 90.390673,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7856,
+    "name": "CNS Gate, Uttara-Diabari/BRTA",
+    "latitude": 23.875434,
+    "longitude": 90.371615,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9043,
+    "name": "Hazi Camp",
+    "latitude": 23.851311,
+    "longitude": 90.411697,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2993,
+    "name": "Uttara club",
+    "latitude": 23.857853,
+    "longitude": 90.400006,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2378,
+    "name": "Jashimuddin Berger Gate",
+    "latitude": 23.861608,
+    "longitude": 90.39876,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.323,
+    "name": "Sector 4,R-13 & 16 Mor",
+    "latitude": 23.86454,
+    "longitude": 90.40324,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.343,
+    "name": "Kamarpara",
+    "latitude": 23.891206,
+    "longitude": 90.388286,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2615,
+    "name": "Mazar Road mor",
+    "latitude": 23.870656,
+    "longitude": 90.422859,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9631,
+    "name": "Sector-6, Road-1",
+    "latitude": 23.874134,
+    "longitude": 90.403912,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4575,
+    "name": "Sector-14",
+    "latitude": 23.867648,
+    "longitude": 90.391175,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6562,
+    "name": "RFL_Showroom_13/4_Splitter",
+    "latitude": 23.866912,
+    "longitude": 90.397499,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5945,
+    "name": "Zafran More Splitter",
+    "latitude": 23,
+    "longitude": 90,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7239,
+    "name": "Top Ten Sec#11",
+    "latitude": 23.874648,
+    "longitude": 90.390675,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1216,
+    "name": "BRTA_Splitter",
+    "latitude": 23.875434,
+    "longitude": 90.371615,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9277,
+    "name": "Cherag Ali Desco",
+    "latitude": 23.905083,
+    "longitude": 90.398946,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1794,
+    "name": "SKF Gate",
+    "latitude": 23,
+    "longitude": 90,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1013,
+    "name": "Station Road",
+    "latitude": 23.893432,
+    "longitude": 90.401778,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.768,
+    "name": "Basic",
+    "latitude": 23.892831,
+    "longitude": 90.413096,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1077,
+    "name": "Minister Showroom Splitter",
+    "latitude": 23.888935,
+    "longitude": 90.401526,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8057,
+    "name": "Sector-9 Road_Splitter",
+    "latitude": 23.875979,
+    "longitude": 90.400192,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5122,
+    "name": "Konabari",
+    "latitude": 24.011409,
+    "longitude": 90.317375,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9993,
+    "name": "Shibbari",
+    "latitude": 23.99657,
+    "longitude": 90.41628,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0796,
+    "name": "Rothkhola Math ",
+    "latitude": 23,
+    "longitude": 90,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9475,
+    "name": "Salna",
+    "latitude": 24.013278,
+    "longitude": 90.383905,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3035,
+    "name": "Board Bazar Gazipur",
+    "latitude": 23.945217,
+    "longitude": 90.382779,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7861,
+    "name": "Nowjar Bus stand",
+    "latitude": 23.989017,
+    "longitude": 90.360603,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9185,
+    "name": "Vogra Bypass",
+    "latitude": 23.977608,
+    "longitude": 90.380878,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.926,
+    "name": "Duet Gate",
+    "latitude": 24.01853,
+    "longitude": 90.417325,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3445,
+    "name": "Shafipur",
+    "latitude": 24.026941,
+    "longitude": 90.273813,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0432,
+    "name": "Chandra mor",
+    "latitude": 24.048654,
+    "longitude": 90.237825,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4177,
+    "name": "Zirabo Bazar",
+    "latitude": 23.913233,
+    "longitude": 90.319022,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4421,
+    "name": "BKSP",
+    "latitude": 23.987347,
+    "longitude": 90.258806,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5085,
+    "name": "Nabinagar Mor",
+    "latitude": 23.913595,
+    "longitude": 90.257798,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4363,
+    "name": "Kohinur Gate",
+    "latitude": 23.915427,
+    "longitude": 90.236457,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9497,
+    "name": "Palli Bidyut",
+    "latitude": 23.9235786431708,
+    "longitude": 90.2628760067588,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.844,
+    "name": "Edison Gate",
+    "latitude": 23.906076,
+    "longitude": 90.285004,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4172,
+    "name": "Jamgora",
+    "latitude": 23.93694,
+    "longitude": 90.2915,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9177,
+    "name": "Norosinghopur",
+    "latitude": 23.9316567405633,
+    "longitude": 90.3075306819563,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3064,
+    "name": "Hemayetpur",
+    "latitude": 23.793419,
+    "longitude": 90.271,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8464,
+    "name": "Fulbariya Bus Stand",
+    "latitude": 23.812452,
+    "longitude": 90.257478,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4792,
+    "name": "Savar Fire Sevice",
+    "latitude": 23.82868,
+    "longitude": 90.2585144,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4653,
+    "name": "Savar Bazar",
+    "latitude": 23.849419,
+    "longitude": 90.257942,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3545,
+    "name": "Genda Bazar",
+    "latitude": 23.83393,
+    "longitude": 90.258963,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4426,
+    "name": "Enam Medical Gate",
+    "latitude": 23.8383625738752,
+    "longitude": 90.2529225359414,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8596,
+    "name": "Radio colony",
+    "latitude": 23.858994806262,
+    "longitude": 90.2627427541333,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9727,
+    "name": "Technical",
+    "latitude": 23.784101,
+    "longitude": 90.353404,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0315,
+    "name": "Porbot cimnema holl",
+    "latitude": 23.7832364439958,
+    "longitude": 90.3386249418242,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4832,
+    "name": "Pallabi/Kalshe ",
+    "latitude": 23.819592,
+    "longitude": 90.366761,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4082,
+    "name": "BRTA Mirpur",
+    "latitude": 23.805029,
+    "longitude": 90.37403,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.62,
+    "name": "UGC Gate",
+    "latitude": 23.780505,
+    "longitude": 90.374387,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.554,
+    "name": "UGC Gate -2",
+    "latitude": 23.780139,
+    "longitude": 90.3745,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3035,
+    "name": " Bangladesh Flim archive Spliter",
+    "latitude": 23.777213,
+    "longitude": 90.371202,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.191,
+    "name": "Bhanga Bridge (Mizan Jame Masjid)",
+    "latitude": 23.782797,
+    "longitude": 90.368502,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.18,
+    "name": "Ibrahimpur Pulpar",
+    "latitude": 23.793886,
+    "longitude": 90.387819,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1287,
+    "name": "Proshika",
+    "latitude": 23.809747,
+    "longitude": 90.360983,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6453,
+    "name": "Mirpur-1",
+    "latitude": 23.797957,
+    "longitude": 90.352451,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1377,
+    "name": "60-feet",
+    "latitude": 23.802608,
+    "longitude": 90.362005,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2532,
+    "name": "AB Bank 60-feet",
+    "latitude": 23.7896032790276,
+    "longitude": 90.3662812574665,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.487,
+    "name": "Shewrapara",
+    "latitude": 23.791528,
+    "longitude": 90.375056,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2659,
+    "name": "Hall Purobi",
+    "latitude": 23.818683,
+    "longitude": 90.364192,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.893,
+    "name": "Mirpur DOHS Gate",
+    "latitude": 23.8322654396482,
+    "longitude": 90.3638109474895,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4297,
+    "name": "Ring Road-Adabor",
+    "latitude": 23.770951,
+    "longitude": 90.363933,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1658,
+    "name": "Jigatola-Bata",
+    "latitude": 23.738797,
+    "longitude": 90.374914,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0051,
+    "name": "Arong Spliter",
+    "latitude": 23.759038,
+    "longitude": 90.373322,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.299,
+    "name": "Tajmohol Road",
+    "latitude": 23.764,
+    "longitude": 90.364925,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3594,
+    "name": "Shajahan Road (Shanjher Maya House) Spliter",
+    "latitude": 23.764164,
+    "longitude": 90.365081,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3518,
+    "name": "Adabor",
+    "latitude": 23.767075,
+    "longitude": 90.357621,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2654,
+    "name": "Shaker Tek",
+    "latitude": 23.7677,
+    "longitude": 90.357303,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7068,
+    "name": "Gabtoli baribadh Road  Spliter",
+    "latitude": 23.776215,
+    "longitude": 90.33955,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.789,
+    "name": "Baitul Aman Housing Society Jaame Mosque",
+    "latitude": 23.771175,
+    "longitude": 90.356439,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8428,
+    "name": "Dhaka Uddan Mohammodpur",
+    "latitude": 23.763918,
+    "longitude": 90.346566,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.016,
+    "name": "Nobodoy Housing Spliter",
+    "latitude": 23.764561,
+    "longitude": 90.351573,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.407,
+    "name": "Shamppa Market Spliter",
+    "latitude": 23.773053,
+    "longitude": 90.359548,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.347,
+    "name": "Shyamoli Park spliter",
+    "latitude": 23.774081,
+    "longitude": 90.365183,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9954,
+    "name": "Residential college Spliter",
+    "latitude": 23.764164,
+    "longitude": 90.365081,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5603,
+    "name": "Agargaon NBR Gate Spliter.",
+    "latitude": 23.775291,
+    "longitude": 90.371725,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2349,
+    "name": "Boshila",
+    "latitude": 23.745692,
+    "longitude": 90.349164,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1863,
+    "name": "Rafa Plaza-27",
+    "latitude": 23.756214,
+    "longitude": 90.375172,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3923,
+    "name": "Abahoni Maath",
+    "latitude": 23.746902,
+    "longitude": 90.373624,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2456,
+    "name": "Baitul moharom-Zigatola",
+    "latitude": 23.736992,
+    "longitude": 90.369009,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8794,
+    "name": "Alhaj Mockbul Hossain University College gate",
+    "latitude": 23.754377,
+    "longitude": 90.3607,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.127,
+    "name": "Square Hospital",
+    "latitude": 23.752829,
+    "longitude": 90.381838,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4126,
+    "name": "Gatco Shamoly",
+    "latitude": 23.775582,
+    "longitude": 90.364944,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.819,
+    "name": "Noble Care Hospital",
+    "latitude": 23.782403,
+    "longitude": 90.368645,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1626,
+    "name": "9A Dhanmondi",
+    "latitude": 23.744305,
+    "longitude": 90.370809,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0916,
+    "name": "Drug office",
+    "latitude": 23.7418448907474,
+    "longitude": 90.3839064188812,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3057,
+    "name": "Katabon",
+    "latitude": 23.738875,
+    "longitude": 90.390981,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8774,
+    "name": "Sonartori",
+    "latitude": 23.7459,
+    "longitude": 90.392864,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4497,
+    "name": "Anchor Tower",
+    "latitude": 23.748335,
+    "longitude": 90.392127,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.071,
+    "name": "Indira Road",
+    "latitude": 23.758053,
+    "longitude": 90.386317,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6868,
+    "name": "Kamrangirchar Rani market",
+    "latitude": 23.720781,
+    "longitude": 90.374497,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2163,
+    "name": "BEPZA",
+    "latitude": 23.744144,
+    "longitude": 90.384511,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6416,
+    "name": "Azimpur Chourasta",
+    "latitude": 23.727062,
+    "longitude": 90.386456,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.923,
+    "name": "Polashi",
+    "latitude": 23.72133,
+    "longitude": 90.38802,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6038,
+    "name": "Eskaton",
+    "latitude": 23.747756,
+    "longitude": 90.400961,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0051,
+    "name": "DMP HQ",
+    "latitude": 23.7439045997143,
+    "longitude": 90.4048286395002,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3613,
+    "name": "Road-6 House-32 Dhanmondi",
+    "latitude": 23.743403,
+    "longitude": 90.381088,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5825,
+    "name": "Truck Stand",
+    "latitude": 23.756783,
+    "longitude": 90.396906,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7878,
+    "name": "Berger,Tejgaon",
+    "latitude": 23.762963,
+    "longitude": 90.404641,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.935,
+    "name": "Tejgaon Registry Office in fron gate",
+    "latitude": 23.765504,
+    "longitude": 90.404471,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6597,
+    "name": "273-276 tejgaon industrial area",
+    "latitude": 23.7667584,
+    "longitude": 90.4048387,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2568,
+    "name": "Holy-cross",
+    "latitude": 23.7576,
+    "longitude": 90.391767,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.123,
+    "name": "Pragati Insurance",
+    "latitude": 23.752685,
+    "longitude": 90.39341,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0261,
+    "name": "Lucas mor",
+    "latitude": 23.768456,
+    "longitude": 90.393735,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6343,
+    "name": "Romask Tower",
+    "latitude": 23.751175,
+    "longitude": 90.396638,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.768,
+    "name": "Press Club",
+    "latitude": 23.729858,
+    "longitude": 90.407697,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6162,
+    "name": "City Center",
+    "latitude": 23.729317,
+    "longitude": 90.417961,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.512,
+    "name": "NCC Bank Gate",
+    "latitude": 23.72757,
+    "longitude": 90.421219,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.04,
+    "name": "Opposite Baitul Mokkaram",
+    "latitude": 23.730786,
+    "longitude": 90.411767,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0667,
+    "name": "Maniknagar",
+    "latitude": 23.72215,
+    "longitude": 90.428835,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4111,
+    "name": "Pukurpar",
+    "latitude": 23.722622,
+    "longitude": 90.432616,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9856,
+    "name": "Jatrabari",
+    "latitude": 23.710229,
+    "longitude": 90.435224,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4985,
+    "name": "Arambag",
+    "latitude": 23.731558,
+    "longitude": 90.420717,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2817,
+    "name": "Hatkhola-DPDC-Gate",
+    "latitude": 23.719193,
+    "longitude": 90.420244,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1482,
+    "name": "Dhaka Madical college",
+    "latitude": 23.724229,
+    "longitude": 90.400417,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.516,
+    "name": "Bangshal Mor",
+    "latitude": 23.721703,
+    "longitude": 90.410769,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6172,
+    "name": "Chawk Bazar",
+    "latitude": 23.715869,
+    "longitude": 90.396639,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8193,
+    "name": "Chawk Bazar Thana",
+    "latitude": 23.718243,
+    "longitude": 90.395008,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5244,
+    "name": "Keranigonj",
+    "latitude": 23.701154,
+    "longitude": 90.397195,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3308,
+    "name": "Abdul Gani Road",
+    "latitude": 23.727911,
+    "longitude": 90.406983,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.105,
+    "name": "Kazi Alauddin Road Splitter",
+    "latitude": 23.723088,
+    "longitude": 90.405581,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8809,
+    "name": "Victoria Park",
+    "latitude": 23.710033,
+    "longitude": 90.412106,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3777,
+    "name": "Kaptan Bazar mor",
+    "latitude": 23.722083,
+    "longitude": 90.412112,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0466,
+    "name": "Islampur Road",
+    "latitude": 23.711569,
+    "longitude": 90.403003,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1304,
+    "name": "Shyampur",
+    "latitude": 23.691803,
+    "longitude": 90.431398,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2227,
+    "name": "Bania Nagar",
+    "latitude": 23.708874,
+    "longitude": 90.4177,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.63,
+    "name": "Shiddeshwary",
+    "latitude": 23.746425,
+    "longitude": 90.411183,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3733,
+    "name": "Khilgaon",
+    "latitude": 23.743958,
+    "longitude": 90.426728,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.967,
+    "name": "Naya Palatan",
+    "latitude": 23.736421,
+    "longitude": 90.4137,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6956,
+    "name": "Malibahg mor",
+    "latitude": 23.743906,
+    "longitude": 90.414749,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8633,
+    "name": "NBR Gate",
+    "latitude": 23.735994,
+    "longitude": 90.408703,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9885,
+    "name": "Vicarunnesa School",
+    "latitude": 23.741823,
+    "longitude": 90.406019,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3218,
+    "name": "Ramna Thana Mosjid",
+    "latitude": 23.745554,
+    "longitude": 90.405616,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.642,
+    "name": "Rajarbagh",
+    "latitude": 23.73749,
+    "longitude": 90.418327,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6917,
+    "name": "Taltola Splitter",
+    "latitude": 23.751063,
+    "longitude": 90.424484,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1228,
+    "name": "DMP HQ Gate",
+    "latitude": 23.743932,
+    "longitude": 90.405256,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5112,
+    "name": "Panchaboti more",
+    "latitude": 23.63241,
+    "longitude": 90.47631,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.075,
+    "name": "Fatullah BRB",
+    "latitude": 23.636003,
+    "longitude": 90.475004,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6277,
+    "name": "Bscic 1 No gate",
+    "latitude": 23.624549,
+    "longitude": 90.476891,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1614,
+    "name": "2 Number railGate",
+    "latitude": 23.615782,
+    "longitude": 90.501832,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.099,
+    "name": "Khanpur",
+    "latitude": 23.615544,
+    "longitude": 90.501856,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.253,
+    "name": "Police super",
+    "latitude": 23.625796,
+    "longitude": 90.498164,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0269,
+    "name": "O.R Nizam Road Splitter",
+    "latitude": 22.360983,
+    "longitude": 91.822823,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4397,
+    "name": "Dampara Police Splitter",
+    "latitude": 22.3517880325763,
+    "longitude": 91.8218938427423,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.146,
+    "name": "Baizid Splitter",
+    "latitude": 22.382563,
+    "longitude": 91.810834,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1333,
+    "name": "Khulshi Splitter",
+    "latitude": 22.361997,
+    "longitude": 91.809054,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.353,
+    "name": "Mimi Super Market Splitter",
+    "latitude": 22.360932,
+    "longitude": 91.827505,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.537,
+    "name": "Muradpur Splitter",
+    "latitude": 22.368881,
+    "longitude": 91.832643,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9238,
+    "name": "Chowkbazar Splitter",
+    "latitude": 22.360761,
+    "longitude": 91.836237,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9617,
+    "name": "Jubilee Road Splitter",
+    "latitude": 22.341414795102,
+    "longitude": 91.8275279626501,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0718,
+    "name": "Tigerpass Splitter",
+    "latitude": 22.342487,
+    "longitude": 91.815483,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5461,
+    "name": "Kadamtoli Splitter",
+    "latitude": 22.334169,
+    "longitude": 91.819433,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.939,
+    "name": "Agrabad Rafiq Tower Splitter",
+    "latitude": 22.326124,
+    "longitude": 91.815839,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3147,
+    "name": "Chowmohoni Splitter",
+    "latitude": 22.333998,
+    "longitude": 91.812487,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8796,
+    "name": "Agrabad Splitter",
+    "latitude": 22.3283026134767,
+    "longitude": 91.8122778824845,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8977,
+    "name": "Sadarghat Splitter",
+    "latitude": 22.328361,
+    "longitude": 91.83072,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6028,
+    "name": "Chittagong Port Splitter",
+    "latitude": 22.312247,
+    "longitude": 91.799352,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.061,
+    "name": "Boro Pole Splitter",
+    "latitude": 22.328118,
+    "longitude": 91.789693,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4485,
+    "name": "Halishahor Artilary Road Splitter ",
+    "latitude": 22.345166,
+    "longitude": 91.779678,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4792,
+    "name": "CEPZ Splitter",
+    "latitude": 22.291591,
+    "longitude": 91.782658,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.498,
+    "name": "Zahurul Haque Biman Ghati Splitter",
+    "latitude": 22.266983,
+    "longitude": 91.817117,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.622,
+    "name": "Potenga(South) Splitter",
+    "latitude": 22.2559086147165,
+    "longitude": 91.7918332884063,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2092,
+    "name": "CTG. Airport Splitter",
+    "latitude": 22.2405163933849,
+    "longitude": 91.8173682910012,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8328,
+    "name": "KEPZ PoP Splitter",
+    "latitude": 22.2747280932749,
+    "longitude": 91.7906341216749,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4126,
+    "name": "Kaptai Rastar Matha Splitter",
+    "latitude": 22.39576,
+    "longitude": 91.874844,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6873,
+    "name": "Bohoddarhat Splitter",
+    "latitude": 22.368011,
+    "longitude": 91.843402,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.104,
+    "name": "Kalurghat I/A Splitter",
+    "latitude": 22.387229,
+    "longitude": 91.871896,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3083,
+    "name": "Alongkar Splitter",
+    "latitude": 22.3587085339129,
+    "longitude": 91.7822533323121,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6335,
+    "name": "Akbor Shah Splitter",
+    "latitude": 22.3711017240022,
+    "longitude": 91.7756139020227,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3098,
+    "name": "Halishahor Noyabazar more Splitter ",
+    "latitude": 22.342702,
+    "longitude": 91.787938,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0603,
+    "name": "Mushafirkhana Splitter",
+    "latitude": 22.337591,
+    "longitude": 91.832906,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.37,
+    "name": "Andorkilla Splitter",
+    "latitude": 22.342726,
+    "longitude": 91.836166,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9504,
+    "name": "Khatungonj Splitter",
+    "latitude": 22.339081,
+    "longitude": 91.843527,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9805,
+    "name": "Kawtoali More Splitter ",
+    "latitude": 22.333302,
+    "longitude": 91.836877,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3586,
+    "name": "Oxygen More Splitter",
+    "latitude": 22.393301,
+    "longitude": 91.82141,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.833,
+    "name": "Baluchara Splitter",
+    "latitude": 22.417132,
+    "longitude": 91.81931,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6802,
+    "name": "Bakulia Splitter",
+    "latitude": 22.3522430224652,
+    "longitude": 91.8523643542085,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8665,
+    "name": "Kalatoli Splitter",
+    "latitude": 21.4276914906306,
+    "longitude": 91.9779011740801,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5732,
+    "name": "Uttaran Model Splitter",
+    "latitude": 21.420375,
+    "longitude": 91.990629,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.386,
+    "name": "Laldighirpar Splitter",
+    "latitude": 21.4435295171785,
+    "longitude": 91.9759591487209,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6128,
+    "name": "Bahar Chara Mosjid Splitter",
+    "latitude": 21.439655,
+    "longitude": 91.971645,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0977,
+    "name": "Doyel_Chottor_Splitter",
+    "latitude": 22.646035,
+    "longitude": 92.19219,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5059,
+    "name": "Rangamati Banorupa Splitter",
+    "latitude": 22.653401,
+    "longitude": 92.178908,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1316,
+    "name": "Mukta Bazar",
+    "latitude": 23.01264,
+    "longitude": 91.396745,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3386,
+    "name": "Police Line",
+    "latitude": 23.021138,
+    "longitude": 91.386941,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.108,
+    "name": "F Rahaman AC Market ",
+    "latitude": 23.009248,
+    "longitude": 91.393134,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.076,
+    "name": "Mohipal ",
+    "latitude": 23.009742,
+    "longitude": 91.384017,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.709,
+    "name": "Berger Gate",
+    "latitude": 23.019488,
+    "longitude": 91.36967,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9675,
+    "name": "Upazila Moor",
+    "latitude": 23.344507,
+    "longitude": 90.706908,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.833,
+    "name": "Police Line",
+    "latitude": 23.466062,
+    "longitude": 91.171122,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1628,
+    "name": "Moghol Moor",
+    "latitude": 23.46521,
+    "longitude": 91.185956,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2034,
+    "name": "Ranirbazar",
+    "latitude": 23.45934167,
+    "longitude": 91.17753,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4736,
+    "name": "Tomsom Bridge",
+    "latitude": 23.4523547,
+    "longitude": 91.1792279,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8677,
+    "name": "Court Point Splitter",
+    "latitude": 24.891021,
+    "longitude": 91.868865,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8694,
+    "name": "Humayun Chattar Splitter",
+    "latitude": 24.877977,
+    "longitude": 91.875209,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7314,
+    "name": "Naiorpool Splitter",
+    "latitude": 24.894876,
+    "longitude": 91.878469,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.057,
+    "name": "RN Tower Splitter",
+    "latitude": 24.899062,
+    "longitude": 91.870872,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0132,
+    "name": "Shahi Eidgah Splitter",
+    "latitude": 24.906299,
+    "longitude": 91.880152,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7493,
+    "name": "West Zindabazar, Sylhet",
+    "latitude": 24.894598,
+    "longitude": 91.866595,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.449,
+    "name": "Housing Estate, Sylhet",
+    "latitude": 24.905803,
+    "longitude": 91.865652,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7285,
+    "name": "Court Road Mor",
+    "latitude": 24.479961,
+    "longitude": 91.778134,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0884,
+    "name": "Thana mor",
+    "latitude": 24.479714,
+    "longitude": 91.765515,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8818,
+    "name": "Divisonal Commissioner Office",
+    "latitude": 24.762728,
+    "longitude": 90.403503,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9458,
+    "name": "Olka Nadi Bangla",
+    "latitude": 24.757776,
+    "longitude": 90.405853,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2168,
+    "name": "Sadeshi Moor",
+    "latitude": 24.757827,
+    "longitude": 90.410278,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.092,
+    "name": "Charpara Moor",
+    "latitude": 24.747339,
+    "longitude": 90.408481,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.397,
+    "name": "Hazi Para Mor 1:4 Splitter\r\n",
+    "latitude": 25.774099331,
+    "longitude": 89.225088,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9114,
+    "name": "Doctors Clinic Gate 1:2 splitter",
+    "latitude": 25.7673986,
+    "longitude": 89.234611,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1785,
+    "name": "Medical East Gate 1:4 Splitter",
+    "latitude": 25.769136,
+    "longitude": 89.2341613,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9993,
+    "name": "BD Betar Mor 1:2 splitter",
+    "latitude": 25.782945,
+    "longitude": 89.2155791,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.541,
+    "name": "DBBL FT Medical Purbogate 1:2 splitter",
+    "latitude": 25.768577276,
+    "longitude": 89.2342751,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6887,
+    "name": "Lalkuthi Mor 1:2 Splitter",
+    "latitude": 25.7584924,
+    "longitude": 89.23494083,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1177,
+    "name": "Lalkuti Girls High School mor 1:4 Splitter",
+    "latitude": 25.7596,
+    "longitude": 89.23526361,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9182,
+    "name": "Islambag Mosque Mor 1:4 splitter",
+    "latitude": 25.7551063,
+    "longitude": 89.23132988,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.547,
+    "name": "Opsonin Pharma dipo Gate 1:2 Splitter",
+    "latitude": 25.75129,
+    "longitude": 89.23124711,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5186,
+    "name": "Sky Lawn Hotel Mor 1:2 Splitter ",
+    "latitude": 25.7564317,
+    "longitude": 89.231568,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4817,
+    "name": "PTC 1:2 splitter",
+    "latitude": 25.745939,
+    "longitude": 89.23157282,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.507,
+    "name": "Jahaj Companiy Mor 1:4 Splitter",
+    "latitude": 25.7489735,
+    "longitude": 89.254995,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.896,
+    "name": "Shapla Chottor 1:4 Splitter",
+    "latitude": 25.740137479,
+    "longitude": 89.2543998,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9917,
+    "name": "Salek Market 1:8 Splitter",
+    "latitude": 25.74386929,
+    "longitude": 89.253074,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.134,
+    "name": "City Bank ATM 1:4 Splitter",
+    "latitude": 25.75029353,
+    "longitude": 89.255724,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5586,
+    "name": "Kamal Kasna 1:4 Splitter",
+    "latitude": 25.74599793,
+    "longitude": 89.2608,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9233,
+    "name": "Checkpost Mor Splitter-2",
+    "latitude": 25.7608067,
+    "longitude": 89.2314042,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.206,
+    "name": "Krishi Bank Mor 1:4 Splitter",
+    "latitude": 25.7551151,
+    "longitude": 89.231399446,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.623,
+    "name": "Uposhohor",
+    "latitude": 24.867867,
+    "longitude": 89.357661,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0723,
+    "name": "Mofiz paglar mor",
+    "latitude": 24.843295,
+    "longitude": 89.373521,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.217,
+    "name": "Azad Pump",
+    "latitude": 24.841333,
+    "longitude": 89.3701,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.185,
+    "name": "Coloni((Agrani Bank,Sultangonj Branch)",
+    "latitude": 24.82667,
+    "longitude": 89.377857,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5022,
+    "name": "Banani BTCL Gate",
+    "latitude": 24.814632,
+    "longitude": 89.379996,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1367,
+    "name": "Banani Second Bypass",
+    "latitude": 24.805951,
+    "longitude": 89.38389,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1167,
+    "name": "ARK Filling Station,,Banani Highway",
+    "latitude": 24.803771,
+    "longitude": 89.385106,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3694,
+    "name": "Khandar More ",
+    "latitude": 24.837875,
+    "longitude": 89.36828,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.914,
+    "name": "Swapno Showroom",
+    "latitude": 24.836679,
+    "longitude": 89.368149,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5938,
+    "name": "DBBL FT,Lotifpur Colony",
+    "latitude": 24.825735,
+    "longitude": 89.377993,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8235,
+    "name": "Sultangonj High School",
+    "latitude": 24.817514,
+    "longitude": 89.378548,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.389,
+    "name": "Bogura Police Line",
+    "latitude": 24.821195,
+    "longitude": 89.378984,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9338,
+    "name": "Tinmatha",
+    "latitude": 24.841991,
+    "longitude": 89.347076,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.87,
+    "name": "NESCO Gate",
+    "latitude": 24.843991,
+    "longitude": 89.354929,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2134,
+    "name": "Shathmatha-1",
+    "latitude": 24.848284,
+    "longitude": 89.372803,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5625,
+    "name": "Shathmatha-2",
+    "latitude": 24.848284,
+    "longitude": 89.372803,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5813,
+    "name": "Opsonin Gate",
+    "latitude": 24.834179,
+    "longitude": 89.347919,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5166,
+    "name": "Technical Training Centre(TTC Gate FDP)",
+    "latitude": 24.855465,
+    "longitude": 89.356864,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.212,
+    "name": "Godarpara Ujala Paints Gate",
+    "latitude": 24.859802,
+    "longitude": 89.348538,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0933,
+    "name": "BRTA ,Jalashawari Tola",
+    "latitude": 24.845552,
+    "longitude": 89.376847,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1677,
+    "name": "Pobapara Krishi Bank 1:4 Splitter from direct OLT PON-1",
+    "latitude": 24.3955695391147,
+    "longitude": 88.6076095451725,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6995,
+    "name": "Grand River View Hotel 1:4 Splitter from direct OLT PON-2",
+    "latitude": 24.36845,
+    "longitude": 88.581189,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3755,
+    "name": "Lakhsmipur 1:8 Splitter",
+    "latitude": 24.371743,
+    "longitude": 88.582356,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1477,
+    "name": "Upo Shor 1:2 Splitter from direct OLT PON-3",
+    "latitude": 24.377928,
+    "longitude": 88.597266,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6653,
+    "name": "Rajshahi POP OLT PON-4 Splitter 1:4",
+    "latitude": 24.37317,
+    "longitude": 88.602838,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9072,
+    "name": "New Market > Railgate 1:8 Splitter",
+    "latitude": 24.374348,
+    "longitude": 88.603736,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6726,
+    "name": "Zero Point > Ranibajar 1:8 Splitter",
+    "latitude": 24.367753,
+    "longitude": 88.601412,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5244,
+    "name": "Alupotti 1:8 Splitter",
+    "latitude": 24.365555,
+    "longitude": 88.599984,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0356,
+    "name": "BATB Gate Kumargora",
+    "latitude": 23.886791,
+    "longitude": 89.1067553,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3542,
+    "name": "Bypass Moor",
+    "latitude": 23.880395,
+    "longitude": 89.0926608,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.751,
+    "name": "JTI Vadalia Gate",
+    "latitude": 23.848521,
+    "longitude": 89.0970508,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6147,
+    "name": "BATB Trihmohoni Gate",
+    "latitude": 23.9279147,
+    "longitude": 89.0941942,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2927,
+    "name": "Chourasta Moor",
+    "latitude": 23.165225,
+    "longitude": 89.214196,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.07,
+    "name": "R N Rd Jashore",
+    "latitude": 23.165124,
+    "longitude": 89.214517,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.164,
+    "name": "City Bypass",
+    "latitude": 23.145595,
+    "longitude": 89.207094,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9944,
+    "name": "ICT Park Gate",
+    "latitude": 23.157641,
+    "longitude": 89.224644,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.576,
+    "name": "Doratana Moor",
+    "latitude": 23.166688,
+    "longitude": 89.209639,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4265,
+    "name": "Dhormotola Moor",
+    "latitude": 23.170849,
+    "longitude": 89.193092,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3625,
+    "name": "BDBL Splitter",
+    "latitude": 22.824069,
+    "longitude": 89.552457,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9602,
+    "name": "BDBL-1",
+    "latitude": 22.824069,
+    "longitude": 89.552457,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1812,
+    "name": "BDBL-2",
+    "latitude": 22.824069,
+    "longitude": 89.552457,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.496,
+    "name": "Moylapota",
+    "latitude": 22.812986,
+    "longitude": 89.556716,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6008,
+    "name": "Khalishpur",
+    "latitude": 22.862411,
+    "longitude": 89.534253,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0505,
+    "name": "Boyra College Splitter",
+    "latitude": 22.837414,
+    "longitude": 89.539964,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.953,
+    "name": "Boyra College",
+    "latitude": 22.837414,
+    "longitude": 89.539964,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2712,
+    "name": "Boyra_Bazar",
+    "latitude": 22.835737,
+    "longitude": 89.532918,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.024,
+    "name": "Daulatpur",
+    "latitude": 22.869375,
+    "longitude": 89.525914,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.508,
+    "name": "Shiromoni",
+    "latitude": 22.904523,
+    "longitude": 89.508016,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.998,
+    "name": "Ahsan Ahmed Road Splitter",
+    "latitude": 22.814342,
+    "longitude": 89.56623,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5994,
+    "name": "Ahsan Ahmed Road",
+    "latitude": 22.814342,
+    "longitude": 89.56623,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4172,
+    "name": "Tootpara Moor",
+    "latitude": 22.806681,
+    "longitude": 89.569249,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7712,
+    "name": "Sonadanga_Splitter",
+    "latitude": 22.816449,
+    "longitude": 89.543052,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8406,
+    "name": "Sonadanga_Splitter",
+    "latitude": 22.816449,
+    "longitude": 89.543052,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9873,
+    "name": "Gollamari_Splitter",
+    "latitude": 22.800282,
+    "longitude": 89.538659,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4324,
+    "name": "Mongla EPZ",
+    "latitude": 22.490222,
+    "longitude": 89.599321,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.396,
+    "name": "Rupatali",
+    "latitude": 22.678602,
+    "longitude": 90.346632,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9587,
+    "name": "Unilever Gate",
+    "latitude": 22.653088,
+    "longitude": 90.344489,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.327,
+    "name": "Amtola Moor",
+    "latitude": 22.689757,
+    "longitude": 90.355791,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.898,
+    "name": "C&B Road, 1 no pool",
+    "latitude": 22.693384000000002,
+    "longitude": 90.354599,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9514,
+    "name": "Natun Bazar",
+    "latitude": 22.710668,
+    "longitude": 90.362551,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5513,
+    "name": "APBN_POLICE Line",
+    "latitude": 22.682698,
+    "longitude": 90.363561,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0725,
+    "name": "Janata Housing",
+    "latitude": 23.801331,
+    "longitude": 90.357761,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.938,
+    "name": "Mirpur-1(Eidgha_Mart_Spliter)",
+    "latitude": 23.798798334084,
+    "longitude": 90.3537312295216,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3906,
+    "name": "Rainkhola Mor",
+    "latitude": 23.8059448525872,
+    "longitude": 90.3517017615476,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.775,
+    "name": "Mazar Road Mor",
+    "latitude": 23.7927937376193,
+    "longitude": 90.3485394567446,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5747,
+    "name": "Kalshi",
+    "latitude": 23.820458,
+    "longitude": 90.36675,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1345,
+    "name": "Mirpur_DOHS_MIST_GATE_Splitter",
+    "latitude": 23.8322654396482,
+    "longitude": 90.3638109474895,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4744,
+    "name": "Mirpur DOHS Central Masjid",
+    "latitude": 23.835933,
+    "longitude": 90.367297,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8474,
+    "name": "Mirpur DOHS Shopping Complex",
+    "latitude": 23.837712,
+    "longitude": 90.37522,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3713,
+    "name": "Benaroshi Polli Spliter",
+    "latitude": 23.80968577,
+    "longitude": 90.36945383,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4578,
+    "name": "Shagufta ",
+    "latitude": 23,
+    "longitude": 90,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.965,
+    "name": "Rupnagar_A​bashik_Mor",
+    "latitude": 23.816707,
+    "longitude": 90.355914,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8486,
+    "name": "Duaripara Spliter",
+    "latitude": 23.823869,
+    "longitude": 90.357073,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.271,
+    "name": "SIKDER WOMEN'S MEDICAL COLLEGE",
+    "latitude": 23.7910282628256,
+    "longitude": 90.4204962998481,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7441,
+    "name": "Hotel Purbani",
+    "latitude": 23.727914,
+    "longitude": 90.416979,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9268,
+    "name": "Victoria Park",
+    "latitude": 23.707437,
+    "longitude": 90.41072,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1794,
+    "name": "Ittefaq Mor",
+    "latitude": 23.721572,
+    "longitude": 90.422317,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6038,
+    "name": "Herajheel Hotel",
+    "latitude": 23.725427,
+    "longitude": 90.422282,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.121,
+    "name": "Aganagar Bridge Road",
+    "latitude": 23.706276,
+    "longitude": 90.399764,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.145,
+    "name": "Kaligoanj Jora Bridge ",
+    "latitude": 23.701734,
+    "longitude": 90.405141,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2158,
+    "name": "Aganagar Nodir par ",
+    "latitude": 23.704979,
+    "longitude": 90.405227,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.164,
+    "name": "Kadamtoli Mor ",
+    "latitude": 23.701176,
+    "longitude": 90.397393,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3992,
+    "name": "Jahanara Plaza ",
+    "latitude": 23.70111,
+    "longitude": 90.395488,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5264,
+    "name": "Chunkuthia Splitter",
+    "latitude": 23.696844,
+    "longitude": 90.398205,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.607,
+    "name": "Zinjira Bazar Splitter",
+    "latitude": 23.707677,
+    "longitude": 90.394038,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8613,
+    "name": "Dhonia Splitter",
+    "latitude": 23.7033403805,
+    "longitude": 90.448434948,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3362,
+    "name": "Rayerbag Splitter",
+    "latitude": 23.6993020620035,
+    "longitude": 90.4569420970724,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9834,
+    "name": "Matuail Splitter",
+    "latitude": 23.6945322773781,
+    "longitude": 90.4668834065689,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.518,
+    "name": "Shibu Market Spliter",
+    "latitude": 23.6443254091905,
+    "longitude": 90.4933491033944,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.18,
+    "name": "Fatullah Studium Spliter",
+    "latitude": 23.6510943786434,
+    "longitude": 90.4910784594551,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.5278,
+    "name": "Point 391",
+    "latitude": 23.6495448010548,
+    "longitude": 90.4876779014148,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1108,
+    "name": "Bhuigor Spliter 1",
+    "latitude": 23.6762806880902,
+    "longitude": 90.4823189431758,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2864,
+    "name": "Bhuigor Spliter 2",
+    "latitude": 23.6782533372046,
+    "longitude": 90.482575901471,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.061,
+    "name": "Signbord splitter",
+    "latitude": 23.6893458916528,
+    "longitude": 90.4807759016119,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.632,
+    "name": "Jalkuri spliter",
+    "latitude": 23.6638922615306,
+    "longitude": 90.4864680740109,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7278,
+    "name": "Tarabo Spliter",
+    "latitude": 23.728554069766,
+    "longitude": 90.5169884202879,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.313,
+    "name": "Demra Spliter",
+    "latitude": 23.7211511164652,
+    "longitude": 90.4952336695241,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7275,
+    "name": "Sarulia Spliter",
+    "latitude": 23.7151341548904,
+    "longitude": 90.4970377653081,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.7698,
+    "name": "Staff Quarter spliter",
+    "latitude": 23.7200622793761,
+    "longitude": 90.490647187016,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0708,
+    "name": "Konapara Spliter",
+    "latitude": 23.71637,
+    "longitude": 90.468761,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.345,
+    "name": "DTX Business center_Splitter",
+    "latitude": 23.817722374679,
+    "longitude": 90.4208908492286,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.807,
+    "name": "Jhilpar SPlitter",
+    "latitude": 23.748632,
+    "longitude": 90.419697,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9272,
+    "name": "AbdullahBag_Satarkul",
+    "latitude": 23.7884579132221,
+    "longitude": 90.4320682811744,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.8577,
+    "name": "Satarkul_IFIC_Bank_Gate",
+    "latitude": 23.789412,
+    "longitude": 90.438145,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.755,
+    "name": "Honda showroom back side New splitter",
+    "latitude": 23.7804662467602,
+    "longitude": 90.4024326844103,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.781,
+    "name": "Aftabnagar Splitter",
+    "latitude": 23.766972,
+    "longitude": 90.427875,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.6792,
+    "name": "Modern more Spliter",
+    "latitude": 25.632172559262,
+    "longitude": 88.6362686518319,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4854,
+    "name": "Lilir More Spliter",
+    "latitude": 25.627890967,
+    "longitude": 88.6335944894191,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3494,
+    "name": "Court Building Spliter",
+    "latitude": 25.62277365236,
+    "longitude": 88.6352735522261,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.287,
+    "name": "Fulbari Spliter",
+    "latitude": 25.6213806,
+    "longitude": 88.6436085168212,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.0774,
+    "name": "House Building Spliter",
+    "latitude": 25.616275,
+    "longitude": 88.650709,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.9224,
+    "name": "Dainik Bangla Mor",
+    "latitude": 23.730714,
+    "longitude": 90.415034,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.1272,
+    "name": "SB Gate Splitter",
+    "latitude": 23.743598,
+    "longitude": 90.41385,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.2053,
+    "name": "Islampur Splitter",
+    "latitude": 23.711717,
+    "longitude": 90.403181,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.3813,
+    "name": "Islampur Road OLD Splitter",
+    "latitude": 23.711509,
+    "longitude": 90.403427,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.158,
+    "name": "Imamgoanj Mor Splitter",
+    "latitude": 23.714004,
+    "longitude": 90.398114,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643521.4424,
+    "name": "Armanitola Splitter",
+    "latitude": 23.713056,
+    "longitude": 90.404404,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.6428,
+    "name": "Royel-Green Splitter",
+    "latitude": 23.728083,
+    "longitude": 90.416588,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.9812,
+    "name": "Bok Chattar  Splitter",
+    "latitude": 23.727925,
+    "longitude": 90.417018,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.8848,
+    "name": "Tilpapara Splitetr",
+    "latitude": 23.745797,
+    "longitude": 90.429282,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.65,
+    "name": "Mintu Road Splitter",
+    "latitude": 23.743902,
+    "longitude": 90.404288,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.1555,
+    "name": "Borak Tower Splitter",
+    "latitude": 23.74431,
+    "longitude": 90.401232,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.239,
+    "name": "Shishu Park Splitter",
+    "latitude": 23.737585,
+    "longitude": 90.398782,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.3022,
+    "name": "Nazimuddin Road Splitter",
+    "latitude": 23.722522,
+    "longitude": 90.39991,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.376,
+    "name": "Police  HQ Splitter",
+    "latitude": 23.724657,
+    "longitude": 90.407622,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.5603,
+    "name": "Nawabpur Road Splitter",
+    "latitude": 23.71625,
+    "longitude": 90.411373,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.8257,
+    "name": "Shahid Faruk Road Splitter",
+    "latitude": 23.710048,
+    "longitude": 90.433893,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.5786,
+    "name": "Kazla DPDC Splitter",
+    "latitude": 23.709682,
+    "longitude": 90.441046,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.708,
+    "name": "Golapbag Splitter",
+    "latitude": 23.718878,
+    "longitude": 90.428936,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.9385,
+    "name": "Mughda Hospital Splitter",
+    "latitude": 23.731788,
+    "longitude": 90.430562,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.2468,
+    "name": "Basabo Buddho Mondir  Splitter",
+    "latitude": 23.736188,
+    "longitude": 90.428568,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.4058,
+    "name": "Shajanpur Thana Splitter",
+    "latitude": 23.746924,
+    "longitude": 90.419469,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.5618,
+    "name": "CMM Court Splitter",
+    "latitude": 23.712556,
+    "longitude": 90.411448,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.8828,
+    "name": "Shekhari Bazar Splitter",
+    "latitude": 23.709958,
+    "longitude": 90.41182,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.3726,
+    "name": "Gandariya Thana  Splitter",
+    "latitude": 23.699921,
+    "longitude": 90.420929,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.7087,
+    "name": "Basabo & Goran mor splitter",
+    "latitude": 23.740885,
+    "longitude": 90.434924,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.3933,
+    "name": "Rabiul Market",
+    "latitude": 24.0052365683523,
+    "longitude": 89.2390825418109,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.4414,
+    "name": "Police Line",
+    "latitude": 23.9990332837853,
+    "longitude": 89.2334327788838,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.0996,
+    "name": "Library More",
+    "latitude": 24.00088765,
+    "longitude": 89.22566836,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.8726,
+    "name": "Traffic More",
+    "latitude": 24.0075886605661,
+    "longitude": 89.2382817697311,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.6663,
+    "name": "PBI",
+    "latitude": 24.0090131963568,
+    "longitude": 89.2322334691714,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.629,
+    "name": "Eidgah More",
+    "latitude": 24.0065038038582,
+    "longitude": 89.2477452881818,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.859,
+    "name": "Kakrail Splitter",
+    "latitude": 23.738381,
+    "longitude": 90.409611,
+    "address": "",
+    "equipmentType": ""
+  },
+  {
+    "id": 1785757643522.4863,
+    "name": "Rajarbag 2nd Spliiter",
+    "latitude": 23.738115,
+    "longitude": 90.418932,
+    "address": "",
+    "equipmentType": ""
   }
 ]

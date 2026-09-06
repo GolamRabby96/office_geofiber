@@ -100,6 +100,10 @@ function MapComponent({ points, selectedPoint, result }) {
     ? result.routeCoordinates
     : [];
 
+  const fiberLineCoords = routeCoords.length > 1
+    ? routeCoords
+    : [];
+
   return (
     <MapContainer
       center={center}
@@ -142,9 +146,17 @@ function MapComponent({ points, selectedPoint, result }) {
 
       {routeCoords.length > 1 && (
         <Polyline
-          key="route-line"
+          key="road-route"
           positions={routeCoords}
-          pathOptions={{ color: '#2196f3', weight: 5, opacity: 0.8 }}
+          pathOptions={{ color: '#2196f3', weight: 4, opacity: 0.7 }}
+        />
+      )}
+
+      {fiberLineCoords.length > 1 && (
+        <Polyline
+          key="fiber-line"
+          positions={fiberLineCoords}
+          pathOptions={{ color: '#e91e63', weight: 5, opacity: 0.9 }}
         />
       )}
     </MapContainer>

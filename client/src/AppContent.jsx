@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MapComponent from './components/MapComponent.jsx';
 import DistanceInput from './components/DistanceInput.jsx';
+import FiberDistanceUpload from './components/FiberDistanceUpload.jsx';
 
 const API_URL = '/api';
 
@@ -45,15 +46,6 @@ function AppContent() {
   return (
     <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
       <div style={{ width: '350px', background: '#f5f5f5', padding: '20px', overflowY: 'auto', borderRight: '1px solid #ddd' }}>
-        <div style={{ marginTop: '20px', padding: '15px', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
-          <h3 style={{ marginTop: 0, color: '#333' }}>Distribution Points ({points.length})</h3>
-          {points.length === 0 ? (
-            <p style={{ color: '#666', fontSize: '14px' }}>No points loaded. Contact admin to upload data.</p>
-          ) : (
-            <p style={{ color: '#333', fontSize: '14px' }}>{points.length} distribution points loaded</p>
-          )}
-        </div>
-
         <DistanceInput onCalculate={calculateDistance} loading={loading} />
 
         {result && (
@@ -82,10 +74,6 @@ function AppContent() {
                   <p style={{ color: '#1565c0' }}>
                     <strong>Fiber Distance:</strong> {result.fiberDistance} meter
                   </p>
-                ) : result.roadDistanceError ? (
-                  <p style={{ color: '#f57c00' }}>
-                    <strong>Fiber Distance:</strong> Not available (needs road distance)
-                  </p>
                 ) : null}
                 {result.roadDistance ? (
                   <p style={{ color: '#2e7d32', fontWeight: 'bold' }}>
@@ -100,6 +88,17 @@ function AppContent() {
             )}
           </div>
         )}
+
+        <div style={{ marginTop: '20px', padding: '15px', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+          <h3 style={{ marginTop: 0, color: '#333' }}>Distribution Points ({points.length})</h3>
+          {points.length === 0 ? (
+            <p style={{ color: '#666', fontSize: '14px' }}>No points loaded. Contact admin to upload data.</p>
+          ) : (
+            <p style={{ color: '#333', fontSize: '14px' }}>{points.length} distribution points loaded</p>
+          )}
+        </div>
+
+        <FiberDistanceUpload />
       </div>
 
       <div style={{ flex: 1 }}>
