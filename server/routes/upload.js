@@ -1,37 +1,12 @@
 import express from 'express';
 import multer from 'multer';
 import xlsx from 'xlsx';
-import fs from 'fs';
-import path from 'path';
+import DistributionPoint from '../models/DistributionPoint.js';
 
 const router = express.Router();
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'distribution-points.json');
-
 const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
-
-function readPoints() {
-  try {
-    if (fs.existsSync(DATA_FILE)) {
-      const data = fs.readFileSync(DATA_FILE, 'utf-8');
-      return JSON.parse(data);
-    }
-  } catch (error) {
-    console.error('Error reading points:', error);
-  }
-  return [];
-}
-
-function writePoints(points) {
-  try {
-    fs.writeFileSync(DATA_FILE, JSON.stringify(points, null, 2), 'utf-8');
-    return true;
-  } catch (error) {
-    console.error('Error writing points:', error);
-    return false;
-  }
-}
+const upload = multer({ storage });
 
 function normalizeKey(key) {
   return String(key).toLowerCase().trim().replace(/[^a-z0-9]/g, '');
@@ -77,8 +52,6 @@ router.post('/upload', upload.single('file'), async (req, res) => {
     let skippedCount = 0;
     const errors = [];
 
-    const points = readPoints();
-
     for (const row of rawData) {
       const normalizedRow = {};
       for (const key in row) {
@@ -117,8 +90,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
       }
 
       if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
-        points.push({
-          id: Date.now() + Math.random(),
+        await DistributionPoint.create({
           name: String(name || `Point ${insertedCount + skippedCount + 1}`),
           latitude: lat,
           longitude: lng,
@@ -134,20 +106,16 @@ router.post('/upload', upload.single('file'), async (req, res) => {
       }
     }
 
-    if (writePoints(points)) {
-      res.json({
-        message: 'Upload complete',
-        inserted: insertedCount,
-        skipped: skippedCount,
-        detectedColumns: sampleKeys,
-        matchedLatColumn: latKey,
-        matchedLngColumn: lngKey,
-        matchedEquipColumn: equipKey,
-        sampleErrors: errors.slice(0, 10)
-      });
-    } else {
-      res.status(500).json({ error: 'Failed to save points' });
-    }
+    res.json({
+      message: 'Upload complete',
+      inserted: insertedCount,
+      skipped: skippedCount,
+      detectedColumns: sampleKeys,
+      matchedLatColumn: latKey,
+      matchedLngColumn: lngKey,
+      matchedEquipColumn: equipKey,
+      sampleErrors: errors.slice(0, 10)
+    });
   } catch (error) {
     console.error('Upload error:', error);
     res.status(500).json({ error: error.message });
@@ -185,36 +153,31 @@ router.post('/debug', upload.single('file'), async (req, res) => {
   }
 });
 
-router.get('/points', (req, res) => {
+router.get('/points', async (req, res) => {
   try {
-    const points = readPoints();
+    const points = await DistributionPoint.find({});
     res.json(points);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-router.delete('/points/:id', (req, res) => {
+router.delete('/points/:id', async (req, res) => {
   try {
-    const points = readPoints();
-    const filtered = points.filter(p => p.id !== req.params.id);
-    if (writePoints(filtered)) {
-      res.json({ message: 'Point deleted' });
-    } else {
-      res.status(500).json({ error: 'Failed to delete point' });
+    const result = await DistributionPoint.findByIdAndDelete(req.params.id);
+    if (!result) {
+      return res.status(404).json({ error: 'Point not found' });
     }
+    res.json({ message: 'Point deleted' });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });
 
-router.delete('/points', (req, res) => {
+router.delete('/points', async (req, res) => {
   try {
-    if (writePoints([])) {
-      res.json({ message: 'All points deleted' });
-    } else {
-      res.status(500).json({ error: 'Failed to delete points' });
-    }
+    await DistributionPoint.deleteMany({});
+    res.json({ message: 'All points deleted' });
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

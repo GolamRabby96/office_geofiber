@@ -1,28 +1,13 @@
 import express from 'express';
 import axios from 'axios';
-import fs from 'fs';
-import path from 'path';
 import multer from 'multer';
 import xlsx from 'xlsx';
+import DistributionPoint from '../models/DistributionPoint.js';
 
 const router = express.Router();
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'distribution-points.json');
-
 const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
-
-function readPoints() {
-  try {
-    if (fs.existsSync(DATA_FILE)) {
-      const data = fs.readFileSync(DATA_FILE, 'utf-8');
-      return JSON.parse(data);
-    }
-  } catch (error) {
-    console.error('Error reading points:', error);
-  }
-  return [];
-}
+const upload = multer({ storage });
 
 function haversineDistance(lat1, lon1, lat2, lon2) {
   const R = 6371;
@@ -43,7 +28,7 @@ router.post('/calculate-distance', async (req, res) => {
       return res.status(400).json({ error: 'Latitude and longitude are required' });
     }
 
-    const points = readPoints();
+    const points = await DistributionPoint.find({});
 
     if (points.length === 0) {
       return res.status(404).json({ error: 'No distribution points in database. Please upload Excel data first.' });
@@ -87,7 +72,7 @@ router.post('/calculate-distance', async (req, res) => {
 
     res.json({
         nearestPoint: {
-          id: nearestPoint.id,
+          id: nearestPoint._id,
           name: nearestPoint.name,
           latitude: nearestPoint.latitude,
           longitude: nearestPoint.longitude,
@@ -110,7 +95,7 @@ router.post('/calculate-distance', async (req, res) => {
   }
 });
 
-router.get('/nearest/:lat/:lng', (req, res) => {
+router.get('/nearest/:lat/:lng', async (req, res) => {
   try {
     const lat = parseFloat(req.params.lat);
     const lng = parseFloat(req.params.lng);
@@ -119,7 +104,7 @@ router.get('/nearest/:lat/:lng', (req, res) => {
       return res.status(400).json({ error: 'Invalid coordinates' });
     }
 
-    const points = readPoints();
+    const points = await DistributionPoint.find({});
 
     const pointsWithDistance = points.map(point => ({
       ...point,
@@ -184,7 +169,7 @@ router.post('/bulk-calculate', upload.single('file'), async (req, res) => {
       return res.status(400).json({ error: 'No file uploaded' });
     }
 
-    const points = readPoints();
+    const points = await DistributionPoint.find({});
 
     if (points.length === 0) {
       return res.status(404).json({ error: 'No distribution points in database. Please upload distribution points first.' });
