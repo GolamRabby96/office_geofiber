@@ -13,7 +13,7 @@ L.Icon.Default.mergeOptions({
 const popIcon = new L.DivIcon({
   className: 'custom-pop-icon',
   html: `<div style="
-    background-color: #e91e63;
+    background-color: #32cd32;
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -34,10 +34,10 @@ const popIcon = new L.DivIcon({
 const splitterIcon = new L.DivIcon({
   className: 'custom-splitter-icon',
   html: `<div style="
-    background-color: #ff9800;
+    background-color: #ff6347;
     width: 24px;
     height: 24px;
-    border-radius: 4px;
+    border-radius: 50%;
     border: 3px solid white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.4);
     display: flex;
@@ -50,6 +50,27 @@ const splitterIcon = new L.DivIcon({
   iconSize: [24, 24],
   iconAnchor: [12, 12],
   popupAnchor: [0, -12]
+});
+
+const customerIcon = new L.DivIcon({
+  className: 'custom-customer-icon',
+  html: `<div style="
+    background-color: #9370db;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+  ">C</div>`,
+  iconSize: [22, 22],
+  iconAnchor: [11, 22],
+  popupAnchor: [0, -16]
 });
 
 const inputIcon = new L.DivIcon({
@@ -88,7 +109,79 @@ function FitBoundsController({ result }) {
   return null;
 }
 
-function MapComponent({ points, selectedPoint, result }) {
+function findPopForCustomer(customer, points) {
+  if (!customer.pop_id) return null;
+
+  const popId = typeof customer.pop_id === 'object' && customer.pop_id !== null
+    ? customer.pop_id._id || customer.pop_id.id
+    : customer.pop_id;
+
+  return points.find(p => String(p._id) === String(popId));
+}
+
+function PointMarker({ point }) {
+  const icon = getIconForType(point.type);
+
+  if (icon) {
+    return (
+      <Marker
+        position={[point.latitude, point.longitude]}
+        icon={icon}
+      >
+        <Popup>
+          <strong>{point.name}</strong><br />
+          {point.type && <><strong>Type:</strong> {point.type}<br /></>}
+          {point.latitude.toFixed(6)}, {point.longitude.toFixed(6)}<br />
+          {point.address && <><br />{point.address}</>}
+        </Popup>
+      </Marker>
+    );
+  }
+
+  return (
+    <CircleMarker
+      center={[point.latitude, point.longitude]}
+      radius={6}
+      pathOptions={{ color: '#32cd32', fillColor: '#32cd32', fillOpacity: 0.7 }}
+    >
+      <Popup>
+        <strong>{point.name}</strong><br />
+        {point.latitude.toFixed(6)}, {point.longitude.toFixed(6)}<br />
+        {point.address && <><br />{point.address}</>}
+      </Popup>
+    </CircleMarker>
+  );
+}
+
+function CustomerMarker({ customer, associatedPop }) {
+  return (
+    <>
+      <Marker
+        position={[customer.latitude, customer.longitude]}
+        icon={customerIcon}
+      >
+        <Popup>
+          <strong>{customer.customer_name}</strong><br />
+          {customer.latitude.toFixed(6)}, {customer.longitude.toFixed(6)}<br />
+          {customer.details && <><br />{customer.details}</>}
+          {associatedPop && <><br /><strong>POP:</strong> {associatedPop.name}</>}
+        </Popup>
+      </Marker>
+
+      {associatedPop && (
+        <Polyline
+          positions={[
+            [customer.latitude, customer.longitude],
+            [associatedPop.latitude, associatedPop.longitude]
+          ]}
+          pathOptions={{ color: '#9370db', weight: 2, opacity: 0.6, dashArray: '5,5' }}
+        />
+      )}
+    </>
+  );
+}
+
+function MapComponent({ points, customers, selectedPoint, result }) {
   const center = useMemo(() => {
     if (points.length > 0) {
       return [points[0].latitude, points[0].longitude];
@@ -103,6 +196,14 @@ function MapComponent({ points, selectedPoint, result }) {
   const fiberLineCoords = routeCoords.length > 1
     ? routeCoords
     : [];
+
+  const customerConnections = useMemo(() => {
+    if (!customers || customers.length === 0 || points.length === 0) return [];
+    return customers.map(customer => ({
+      customer,
+      pop: findPopForCustomer(customer, points)
+    }));
+  }, [customers, points]);
 
   return (
     <MapContainer
@@ -121,15 +222,19 @@ function MapComponent({ points, selectedPoint, result }) {
         <PointMarker key={point._id} point={point} />
       ))}
 
+      {customerConnections.map(({ customer, pop }) => (
+        <CustomerMarker key={customer._id || customer.id} customer={customer} associatedPop={pop} />
+      ))}
+
       {selectedPoint && (
         <Marker
           key="selected-point"
           position={[selectedPoint.latitude, selectedPoint.longitude]}
-          icon={getIconForType(selectedPoint.equipmentType) || new L.Icon.Default()}
+          icon={getIconForType(selectedPoint.type) || new L.Icon.Default()}
         >
           <Popup>
             <strong>Selected: {selectedPoint.name}</strong><br />
-            {selectedPoint.equipmentType && <><strong>Type:</strong> {selectedPoint.equipmentType}<br /></>}
+            {selectedPoint.type && <><strong>Type:</strong> {selectedPoint.type}<br /></>}
             {selectedPoint.latitude.toFixed(6)}, {selectedPoint.longitude.toFixed(6)}
           </Popup>
         </Marker>
@@ -160,40 +265,6 @@ function MapComponent({ points, selectedPoint, result }) {
         />
       )}
     </MapContainer>
-  );
-}
-
-function PointMarker({ point }) {
-  const icon = getIconForType(point.equipmentType);
-
-  if (icon) {
-    return (
-      <Marker
-        position={[point.latitude, point.longitude]}
-        icon={icon}
-      >
-        <Popup>
-          <strong>{point.name}</strong><br />
-          {point.equipmentType && <><strong>Type:</strong> {point.equipmentType}<br /></>}
-          {point.latitude.toFixed(6)}, {point.longitude.toFixed(6)}<br />
-          {point.address && <><br />{point.address}</>}
-        </Popup>
-      </Marker>
-    );
-  }
-
-  return (
-    <CircleMarker
-      center={[point.latitude, point.longitude]}
-      radius={6}
-      pathOptions={{ color: '#2196f3', fillColor: '#2196f3', fillOpacity: 0.7 }}
-    >
-      <Popup>
-        <strong>{point.name}</strong><br />
-        {point.latitude.toFixed(6)}, {point.longitude.toFixed(6)}<br />
-        {point.address && <><br />{point.address}</>}
-      </Popup>
-    </CircleMarker>
   );
 }
 

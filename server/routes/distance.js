@@ -77,7 +77,7 @@ router.post('/calculate-distance', async (req, res) => {
           latitude: nearestPoint.latitude,
           longitude: nearestPoint.longitude,
           address: nearestPoint.address,
-          equipmentType: nearestPoint.equipmentType || ''
+          type: nearestPoint.type || ''
         },
         inputPoint: {
           latitude: lat,
@@ -107,7 +107,7 @@ router.get('/nearest/:lat/:lng', async (req, res) => {
     const points = await DistributionPoint.find({});
 
     const pointsWithDistance = points.map(point => ({
-      ...point,
+      ...point.toObject(),
       distance: haversineDistance(lat, lng, point.latitude, point.longitude)
     })).sort((a, b) => a.distance - b.distance).slice(0, 10);
 

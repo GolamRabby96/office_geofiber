@@ -8,12 +8,14 @@ const API_URL = '/api';
 
 function AppContent() {
   const [points, setPoints] = useState([]);
+  const [customers, setCustomers] = useState([]);
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [selectedPoint, setSelectedPoint] = useState(null);
 
   useEffect(() => {
     fetchPoints();
+    fetchCustomers();
   }, []);
 
   const fetchPoints = async () => {
@@ -22,6 +24,19 @@ function AppContent() {
       setPoints(response.data);
     } catch (error) {
       console.error('Error fetching points:', error);
+    }
+  };
+
+  const fetchCustomers = async () => {
+    try {
+      const response = await axios.get(`${API_URL}/customers`);
+      const customersWithPop = response.data.map(c => ({
+        ...c,
+        pop_id: c.pop_id || c.popId
+      }));
+      setCustomers(customersWithPop);
+    } catch (error) {
+      console.error('Error fetching customers:', error);
     }
   };
 
@@ -65,7 +80,7 @@ function AppContent() {
               <div style={{ fontSize: '14px' }}>
                 <p><strong>Input Point:</strong> ({result.inputPoint.latitude.toFixed(6)}, {result.inputPoint.longitude.toFixed(6)})</p>
                 <p><strong>Nearest Point:</strong> {result.nearestPoint.name}</p>
-                {result.nearestPoint.equipmentType && <p><strong>Type:</strong> {result.nearestPoint.equipmentType}</p>}
+                {result.nearestPoint.type && <p><strong>Type:</strong> {result.nearestPoint.type}</p>}
                 <p><strong>Coordinates:</strong> ({result.nearestPoint.latitude.toFixed(6)}, {result.nearestPoint.longitude.toFixed(6)})</p>
                 {result.nearestPoint.address && <p><strong>Address:</strong> {result.nearestPoint.address}</p>}
                 <hr style={{ border: 'none', borderTop: '1px solid #ccc', margin: '10px 0' }} />
@@ -94,7 +109,28 @@ function AppContent() {
           {points.length === 0 ? (
             <p style={{ color: '#666', fontSize: '14px' }}>No points loaded. Contact admin to upload data.</p>
           ) : (
-            <p style={{ color: '#333', fontSize: '14px' }}>{points.length} distribution points loaded</p>
+            <div style={{ fontSize: '14px' }}>
+              <p style={{ color: '#333' }}>{points.length} distribution points loaded</p>
+              <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <span style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#32cd32' }}></span>
+                  POPs: {points.filter(p => p.type === 'POP').length}
+                </span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  <span style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#ff6347' }}></span>
+                  Splitters: {points.filter(p => p.type === 'Splitter').length}
+                </span>
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div style={{ marginTop: '20px', padding: '15px', background: 'white', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
+          <h3 style={{ marginTop: 0, color: '#333' }}>Customers ({customers.length})</h3>
+          {customers.length === 0 ? (
+            <p style={{ color: '#666', fontSize: '14px' }}>No customers loaded.</p>
+          ) : (
+            <p style={{ color: '#333', fontSize: '14px' }}>{customers.length} customers loaded and connected to POPs</p>
           )}
         </div>
 
@@ -104,6 +140,7 @@ function AppContent() {
       <div style={{ flex: 1 }}>
         <MapComponent
           points={points}
+          customers={customers}
           selectedPoint={selectedPoint}
           result={result}
         />

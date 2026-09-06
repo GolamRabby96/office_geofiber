@@ -13,11 +13,13 @@ const DistributionPointSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
-  address: {
+  type: {
     type: String,
-    default: ''
+    enum: ['POP', 'Splitter'],
+    required: true,
+    default: 'Splitter'
   },
-  equipmentType: {
+  address: {
     type: String,
     default: ''
   },

@@ -16,7 +16,7 @@ const LAT_KEYS = ['latitude', 'lat', 'lattitude', 'latit', 'y', 'ycoordinate', '
 const LNG_KEYS = ['longitude', 'lng', 'long', 'lon', 'longitute', 'longitudes', 'longit', 'x', 'xcoordinate'];
 const NAME_KEYS = ['name', 'pointname', 'point', 'title', 'label', 'locationname', 'site', 'sitename', 'address'];
 const ADDR_KEYS = ['address', 'location', 'addr', 'street', 'area', 'place', 'locationname'];
-const EQUIP_KEYS = ['equipmenttype', 'type', 'equipment', 'category', 'equip', 'eqtype'];
+const EQUIP_KEYS = ['type', 'equipmenttype', 'equipment', 'category', 'equip', 'eqtype'];
 
 function findKey(keys, candidates) {
   for (const c of candidates) {
@@ -81,12 +81,13 @@ router.post('/upload', upload.single('file'), async (req, res) => {
 
       const name = nameKey ? normalizedRow[nameKey] : `Point ${insertedCount + skippedCount + 1}`;
       const address = addrKey ? normalizedRow[addrKey] : '';
-      let equipmentType = '';
+      let nodeType = 'Splitter';
       if (equipKey && normalizedRow[equipKey]) {
         const raw = String(normalizedRow[equipKey]).trim();
-        if (/^pop$/i.test(raw)) equipmentType = 'POP';
-        else if (/splitter/i.test(raw)) equipmentType = 'Splitter';
-        else equipmentType = raw;
+        if (/^pop$/i.test(raw)) nodeType = 'POP';
+        else if (/splitter/i.test(raw)) nodeType = 'Splitter';
+        else if (raw.toLowerCase().includes('pop')) nodeType = 'POP';
+        else nodeType = 'Splitter';
       }
 
       if (!isNaN(lat) && !isNaN(lng) && lat >= -90 && lat <= 90 && lng >= -180 && lng <= 180) {
@@ -94,8 +95,8 @@ router.post('/upload', upload.single('file'), async (req, res) => {
           name: String(name || `Point ${insertedCount + skippedCount + 1}`),
           latitude: lat,
           longitude: lng,
-          address: String(address || ''),
-          equipmentType
+          type: nodeType,
+          address: String(address || '')
         });
         insertedCount++;
       } else {
@@ -113,7 +114,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
       detectedColumns: sampleKeys,
       matchedLatColumn: latKey,
       matchedLngColumn: lngKey,
-      matchedEquipColumn: equipKey,
+      matchedTypeColumn: equipKey,
       sampleErrors: errors.slice(0, 10)
     });
   } catch (error) {

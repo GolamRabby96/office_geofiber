@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 import connectDB from './config/db.js';
 import uploadRoutes from './routes/upload.js';
 import distanceRoutes from './routes/distance.js';
+import customerRoutes from './routes/customers.js';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -23,6 +24,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/upload', uploadRoutes);
 app.use('/api/distance', distanceRoutes);
+app.use('/api/customers', customerRoutes);
 
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'Distribution Distance API is running' });
