@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Polyline, CircleMarker, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
@@ -22,7 +22,7 @@ function createPinIcon(color, label) {
   const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="38" viewBox="0 0 28 38">
   <path d="M14 0C8.48 0 4 4.48 4 10c0 5.5 7 13 10 15.51C17 23 24 15.5 24 10c0-5.52-4.48-10-10-10z" fill="${color}" stroke="white" stroke-width="2"/>
-  <text x="14" y="15" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">${label}</text>
+  <text x="14" y="11" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="central">${label}</text>
 </svg>`;
   return L.icon({
     iconUrl: svgToDataUri(svg),
@@ -45,6 +45,30 @@ function getIconForType(type) {
   if (t === 'POP') return popIcon;
   if (t === 'SPLITTER') return splitterIcon;
   return undefined;
+}
+
+function isPopType(type) {
+  if (!type) return false;
+  return String(type).trim().toUpperCase() === 'POP';
+}
+
+function ZoomTracker({ onZoomChange }) {
+  const map = useMap();
+
+  useEffect(() => {
+    const handleZoomEnd = () => {
+      onZoomChange(map.getZoom());
+    };
+
+    map.on('zoomend', handleZoomEnd);
+    onZoomChange(map.getZoom());
+
+    return () => {
+      map.off('zoomend', handleZoomEnd);
+    };
+  }, [map, onZoomChange]);
+
+  return null;
 }
 
 function FitBoundsController({ result }) {
@@ -96,8 +120,8 @@ function PointMarker({ point }) {
       center={[point.latitude, point.longitude]}
       radius={6}
       pathOptions={{
-        color: point.type && String(point.type).trim().toUpperCase() === 'SPLITTER' ? '#FF6347' : '#32CD32',
-        fillColor: point.type && String(point.type).trim().toUpperCase() === 'SPLITTER' ? '#FF6347' : '#32CD32',
+        color: isPopType(point.type) ? '#32CD32' : '#FF6347',
+        fillColor: isPopType(point.type) ? '#32CD32' : '#FF6347',
         fillOpacity: 0.7
       }}
     >
@@ -140,6 +164,9 @@ function CustomerMarker({ customer, associatedPop }) {
 }
 
 function MapComponent({ points, customers, selectedPoint, result }) {
+  const [zoomLevel, setZoomLevel] = useState(13);
+  const showAllMarkers = zoomLevel >= 14;
+
   const center = useMemo(() => {
     if (points.length > 0) {
       return [points[0].latitude, points[0].longitude];
@@ -154,6 +181,11 @@ function MapComponent({ points, customers, selectedPoint, result }) {
   const fiberLineCoords = routeCoords.length > 1
     ? routeCoords
     : [];
+
+  const visiblePoints = useMemo(() => {
+    if (showAllMarkers) return points;
+    return points.filter(point => isPopType(point.type));
+  }, [points, showAllMarkers]);
 
   const customerConnections = useMemo(() => {
     if (!customers || customers.length === 0 || points.length === 0) return [];
@@ -174,13 +206,14 @@ function MapComponent({ points, customers, selectedPoint, result }) {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
+      <ZoomTracker onZoomChange={setZoomLevel} />
       <FitBoundsController result={result} />
 
-      {points.map(point => (
+      {visiblePoints.map(point => (
         <PointMarker key={point._id} point={point} />
       ))}
 
-      {customerConnections.map(({ customer, pop }) => (
+      {showAllMarkers && customerConnections.map(({ customer, pop }) => (
         <CustomerMarker key={customer._id || customer.id} customer={customer} associatedPop={pop} />
       ))}
 
