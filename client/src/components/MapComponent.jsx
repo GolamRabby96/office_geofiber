@@ -10,87 +10,48 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
+const PIN_SVG = (color, label) => `
+  <svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
+    <path d="M14 0C8.48 0 4 4.48 4 10c0 5.5 7 13 10 15.51C17 23 24 15.5 24 10c0-5.52-4.48-10-10-10z" fill="${color}" stroke="white" stroke-width="2"/>
+    <text x="14" y="15" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">${label}</text>
+  </svg>
+`;
+
 const popIcon = new L.DivIcon({
   className: 'custom-pop-icon',
-  html: `<div style="
-    background-color: #32cd32;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-  ">P</div>`,
-  iconSize: [24, 24],
-  iconAnchor: [12, 12],
-  popupAnchor: [0, -12]
+  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#32CD32', 'P')}</div>`,
+  iconSize: [28, 38],
+  iconAnchor: [14, 38],
+  popupAnchor: [0, -40]
 });
 
 const splitterIcon = new L.DivIcon({
   className: 'custom-splitter-icon',
-  html: `<div style="
-    background-color: #ff6347;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-  ">S</div>`,
-  iconSize: [24, 24],
-  iconAnchor: [12, 12],
-  popupAnchor: [0, -12]
+  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#FF6347', 'S')}</div>`,
+  iconSize: [28, 38],
+  iconAnchor: [14, 38],
+  popupAnchor: [0, -40]
 });
 
 const customerIcon = new L.DivIcon({
   className: 'custom-customer-icon',
-  html: `<div style="
-    background-color: #9370db;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    font-size: 10px;
-  ">C</div>`,
-  iconSize: [22, 22],
-  iconAnchor: [11, 22],
-  popupAnchor: [0, -16]
+  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#9370db', 'C')}</div>`,
+  iconSize: [28, 38],
+  iconAnchor: [14, 38],
+  popupAnchor: [0, -40]
 });
 
 const inputIcon = new L.DivIcon({
   className: 'custom-input-icon',
-  html: `<div style="
-    background-color: #2196f3;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-  "></div>`,
-  iconSize: [18, 18],
-  iconAnchor: [9, 9],
-  popupAnchor: [0, -9]
+  html: `<div style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#2196f3', '')}</div>`,
+  iconSize: [28, 38],
+  iconAnchor: [14, 38],
+  popupAnchor: [0, -40]
 });
 
-function getIconForType(equipmentType) {
-  if (equipmentType === 'POP') return popIcon;
-  if (equipmentType === 'Splitter') return splitterIcon;
+function getIconForType(type) {
+  if (type === 'POP') return popIcon;
+  if (type === 'Splitter') return splitterIcon;
   return undefined;
 }
 
@@ -142,7 +103,7 @@ function PointMarker({ point }) {
     <CircleMarker
       center={[point.latitude, point.longitude]}
       radius={6}
-      pathOptions={{ color: '#32cd32', fillColor: '#32cd32', fillOpacity: 0.7 }}
+      pathOptions={{ color: '#32CD32', fillColor: '#32CD32', fillOpacity: 0.7 }}
     >
       <Popup>
         <strong>{point.name}</strong><br />

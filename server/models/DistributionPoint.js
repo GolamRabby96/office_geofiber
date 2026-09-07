@@ -17,7 +17,7 @@ const DistributionPointSchema = new mongoose.Schema({
     type: String,
     enum: ['POP', 'Splitter'],
     required: true,
-    default: 'Splitter'
+    default: 'POP'
   },
   address: {
     type: String,

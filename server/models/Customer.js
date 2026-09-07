@@ -20,7 +20,7 @@ const CustomerSchema = new mongoose.Schema({
   pop_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'DistributionPoint',
-    required: true
+    // required: true
   }
 }, {
   timestamps: true
