@@ -1,5 +1,6 @@
 import express from 'express';
 import multer from 'multer';
+import path from 'path';
 import xlsx from 'xlsx';
 import DistributionPoint from '../models/DistributionPoint.js';
 import Customer from '../models/Customer.js';
@@ -137,13 +138,22 @@ router.post('/upload', upload.single('file'), async (req, res) => {
       return res.status(400).json({ error: 'No file uploaded' });
     }
 
+    const validExtensions = ['.xlsx', '.xls', '.csv'];
+    const fileExt = path.extname(req.file.originalname).toLowerCase();
+    if (!validExtensions.includes(fileExt)) {
+      return res.status(400).json({
+        error: 'Invalid file type. Only .xlsx, .xls, and .csv files are allowed.',
+        detectedColumns: []
+      });
+    }
+
     const workbook = xlsx.read(req.file.buffer, { type: 'buffer' });
     const sheetName = workbook.SheetNames[0];
     const worksheet = workbook.Sheets[sheetName];
     const rawData = xlsx.utils.sheet_to_json(worksheet);
 
     if (rawData.length === 0) {
-      return res.status(400).json({ error: 'Excel file is empty' });
+      return res.status(400).json({ error: 'Uploaded file is empty' });
     }
 
     const sampleKeys = Object.keys(rawData[0]);
@@ -165,6 +175,15 @@ router.post('/upload', upload.single('file'), async (req, res) => {
     let insertedCount = 0;
     let skippedCount = 0;
     const errors = [];
+
+    const allPops = await DistributionPoint.find({ type: 'POP' });
+
+    let popByNameCache = null;
+    if (popKey) {
+      popByNameCache = new Map();
+    }
+
+    const docsToInsert = [];
 
     for (const row of rawData) {
       const normalizedRow = {};
@@ -202,28 +221,32 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         }
 
         if (!popId) {
-          const popByName = await DistributionPoint.findOne({ name: rawPopValue, type: 'POP' });
-          if (popByName) {
-            popId = popByName._id;
+          if (popByNameCache.has(rawPopValue)) {
+            popId = popByNameCache.get(rawPopValue);
+          } else {
+            const popByName = allPops.find(p => p.name === rawPopValue);
+            if (popByName) {
+              popId = popByName._id;
+              popByNameCache.set(rawPopValue, popId);
+            } else {
+              popByNameCache.set(rawPopValue, null);
+            }
           }
         }
       }
 
       if (!popId) {
-        const allPops = await DistributionPoint.find({ type: 'POP' });
-        if (allPops.length > 0) {
-          let minDist = Infinity;
-          let nearestPop = null;
-          for (const pop of allPops) {
-            const d = haversineDistance(lat, lng, pop.latitude, pop.longitude);
-            if (d < minDist) {
-              minDist = d;
-              nearestPop = pop;
-            }
+        let minDist = Infinity;
+        let nearestPop = null;
+        for (const pop of allPops) {
+          const d = haversineDistance(lat, lng, pop.latitude, pop.longitude);
+          if (d < minDist) {
+            minDist = d;
+            nearestPop = pop;
           }
-          if (nearestPop) {
-            popId = nearestPop._id;
-          }
+        }
+        if (nearestPop) {
+          popId = nearestPop._id;
         }
       }
 
@@ -233,7 +256,7 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         continue;
       }
 
-      await Customer.create({
+      docsToInsert.push({
         customer_name: String(customerName || `Customer ${insertedCount + skippedCount + 1}`),
         latitude: lat,
         longitude: lng,
@@ -241,6 +264,10 @@ router.post('/upload', upload.single('file'), async (req, res) => {
         pop_id: popId
       });
       insertedCount++;
+    }
+
+    if (docsToInsert.length > 0) {
+      await Customer.insertMany(docsToInsert, { ordered: false });
     }
 
     res.json({

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import FileUpload from './FileUpload';
 
@@ -22,6 +22,11 @@ function AdminPanel() {
   });
   const [editingCustomer, setEditingCustomer] = useState(null);
   const [savingCustomer, setSavingCustomer] = useState(false);
+  const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
+  const [uploadLoading, setUploadLoading] = useState(false);
+  const [uploadResult, setUploadResult] = useState(null);
+  const [uploadedFile, setUploadedFile] = useState(null);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     fetchPoints();
@@ -89,6 +94,70 @@ function AdminPanel() {
   const handleCustomerInputChange = (e) => {
     const { name, value } = e.target;
     setCustomerForm(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleFileSelect = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      setUploadedFile(file);
+      setUploadResult(null);
+    }
+  };
+
+  const handleFileUpload = async () => {
+    if (!uploadedFile) return;
+
+    const validExtensions = ['.xlsx', '.xls', '.csv'];
+    const fileExt = uploadedFile.name.slice(uploadedFile.name.lastIndexOf('.')).toLowerCase();
+    if (!validExtensions.includes(fileExt)) {
+      alert('Invalid file type. Only .xlsx, .xls, and .csv files are allowed.');
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append('file', uploadedFile);
+
+    setUploadLoading(true);
+    setUploadResult(null);
+
+    try {
+      const response = await axios.post(`${API_URL}/customers/upload`, formData, {
+        headers: { 'Content-Type': 'multipart/form-data' }
+      });
+
+      setUploadResult({
+        type: 'success',
+        message: `Successfully imported ${response.data.inserted} customers (${response.data.skipped} skipped).`,
+        details: response.data
+      });
+
+      await fetchCustomers();
+    } catch (error) {
+      setUploadResult({
+        type: 'error',
+        message: error.response?.data?.error || 'Upload failed. Please try again.'
+      });
+    } finally {
+      setUploadLoading(false);
+    }
+  };
+
+  const downloadSample = async () => {
+    try {
+      const response = await axios.get(`${API_URL}/customers/sample`, {
+        responseType: 'blob'
+      });
+      const url = window.URL.createObjectURL(response.data);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'sample-customers.xlsx');
+      document.body.appendChild(link);
+      link.click();
+      link.parentNode.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      alert('Failed to download sample file');
+    }
   };
 
   const resetCustomerForm = () => {
@@ -295,10 +364,20 @@ function AdminPanel() {
           {activeTab === 'customers' && (
             <>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                <h3 style={{ margin: 0, color: '#333' }}>Customers ({customers.length})</h3>
-                <button onClick={resetCustomerForm} style={{ ...buttonStyle, background: '#607d8b', color: 'white' }}>
-                  + New Customer
-                </button>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
+                  <h3 style={{ margin: 0, color: '#333' }}>Customers ({customers.length})</h3>
+                  <button onClick={() => { setIsUploadModalOpen(true); setUploadResult(null); setUploadedFile(null); }} style={{ ...buttonStyle, background: '#1565c0', color: 'white', fontSize: '13px', padding: '6px 16px' }}>
+                    Import Excel/CSV
+                  </button>
+                </div>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <button onClick={downloadSample} style={{ ...buttonStyle, background: '#607d8b', color: 'white', fontSize: '13px', padding: '6px 16px' }}>
+                    Download Sample
+                  </button>
+                  <button onClick={resetCustomerForm} style={{ ...buttonStyle, background: '#607d8b', color: 'white' }}>
+                    + New Customer
+                  </button>
+                </div>
               </div>
 
               <div style={{ background: 'white', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)', marginBottom: '20px' }}>
@@ -398,6 +477,161 @@ function AdminPanel() {
           )}
         </div>
       </div>
+
+      {isUploadModalOpen && (
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          background: 'rgba(0,0,0,0.5)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          zIndex: 2000
+        }}>
+          <div style={{
+            background: 'white',
+            borderRadius: '12px',
+            width: '90%',
+            maxWidth: '500px',
+            maxHeight: '85vh',
+            display: 'flex',
+            flexDirection: 'column',
+            overflow: 'hidden',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.3)'
+          }}>
+            <div style={{
+              padding: '20px',
+              borderBottom: '1px solid #eee',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center'
+            }}>
+              <h3 style={{ margin: 0, color: '#333' }}>Import Customers from Excel/CSV</h3>
+              <button onClick={() => setIsUploadModalOpen(false)} style={{
+                background: 'none',
+                border: 'none',
+                fontSize: '24px',
+                cursor: 'pointer',
+                color: '#999',
+                padding: '0',
+                width: '30px',
+                height: '30px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>&times;</button>
+            </div>
+
+            <div style={{ padding: '20px', overflowY: 'auto', flex: 1 }}>
+              <p style={{ fontSize: '13px', color: '#666', marginBottom: '12px' }}>
+                Upload an Excel (.xlsx, .xls) or CSV (.csv) file with columns:
+                <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>customer_name</code>,
+                <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>latitude</code>,
+                <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>longitude</code>,
+                <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>details</code>,
+                <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>pop_name</code> or <code style={{ background: '#f0f0f0', padding: '2px 6px', borderRadius: '3px', fontSize: '12px', marginLeft: '4px' }}>pop_id</code>
+              </p>
+
+              <div
+                onDrop={(e) => {
+                  e.preventDefault();
+                  const file = e.dataTransfer.files[0];
+                  if (file) {
+                    setUploadedFile(file);
+                    setUploadResult(null);
+                  }
+                }}
+                onDragOver={(e) => e.preventDefault()}
+                onClick={() => fileInputRef.current?.click()}
+                style={{
+                  border: '2px dashed #ccc',
+                  borderRadius: '8px',
+                  padding: '30px',
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                  background: '#fafafa',
+                  marginBottom: '12px',
+                  transition: 'border-color 0.2s, background-color 0.2s'
+                }}
+              >
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".xlsx,.xls,.csv"
+                  onChange={handleFileSelect}
+                  style={{ display: 'none' }}
+                />
+                <div style={{ fontSize: '16px', color: '#666', marginBottom: '8px' }}>
+                  {uploadedFile ? uploadedFile.name : 'Click to select or drag & drop file here'}
+                </div>
+                <div style={{ fontSize: '12px', color: '#999' }}>
+                  {uploadedFile ? `${(uploadedFile.size / 1024).toFixed(1)} KB` : 'Supports: .xlsx, .xls, .csv'}
+                </div>
+              </div>
+
+              {uploadResult && (
+                <div style={{
+                  padding: '12px',
+                  borderRadius: '6px',
+                  marginBottom: '12px',
+                  background: uploadResult.type === 'error' ? '#ffebee' : '#e8f5e9',
+                  border: `1px solid ${uploadResult.type === 'error' ? '#f44336' : '#4caf50'}`,
+                  fontSize: '14px'
+                }}>
+                  <strong style={{ color: uploadResult.type === 'error' ? '#c62828' : '#2e7d32' }}>
+                    {uploadResult.type === 'error' ? 'Error' : 'Success'}
+                  </strong>
+                  <p style={{ margin: '6px 0 0 0' }}>{uploadResult.message}</p>
+                  {uploadResult.details?.detectedColumns && (
+                    <p style={{ margin: '4px 0 0 0', fontSize: '12px', color: '#666' }}>
+                      Detected columns: {uploadResult.details.detectedColumns.join(', ')}
+                    </p>
+                  )}
+                </div>
+              )}
+
+              <div style={{ display: 'flex', gap: '10px', marginTop: '8px' }}>
+                <button
+                  onClick={downloadSample}
+                  style={{ ...buttonStyle, background: '#607d8b', color: 'white', flex: 1 }}
+                >
+                  Download Sample
+                </button>
+              </div>
+            </div>
+
+            <div style={{
+              padding: '16px 20px',
+              borderTop: '1px solid #eee',
+              display: 'flex',
+              gap: '10px',
+              justifyContent: 'flex-end'
+            }}>
+              <button
+                onClick={() => setIsUploadModalOpen(false)}
+                style={{ ...buttonStyle, background: '#9e9e9e', color: 'white' }}
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleFileUpload}
+                disabled={!uploadedFile || uploadLoading}
+                style={{
+                  ...buttonStyle,
+                  background: !uploadedFile || uploadLoading ? '#ccc' : '#4caf50',
+                  color: 'white',
+                  cursor: !uploadedFile || uploadLoading ? 'default' : 'pointer'
+                }}
+              >
+                {uploadLoading ? 'Importing...' : 'Import'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
