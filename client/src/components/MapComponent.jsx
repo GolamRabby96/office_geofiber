@@ -163,9 +163,31 @@ function CustomerMarker({ customer, associatedPop }) {
   );
 }
 
+function ZoomIndicator({ zoomLevel }) {
+  return (
+    <div style={{
+      position: 'absolute',
+      bottom: '10px',
+      right: '10px',
+      zIndex: 1000,
+      background: 'rgba(255, 255, 255, 0.85)',
+      padding: '6px 12px',
+      borderRadius: '4px',
+      boxShadow: '0 1px 4px rgba(0,0,0,0.3)',
+      fontSize: '14px',
+      fontWeight: 'bold',
+      color: '#333',
+      backdropFilter: 'blur(2px)',
+      border: '1px solid rgba(0,0,0,0.1)'
+    }}>
+      Zoom: {zoomLevel}
+    </div>
+  );
+}
+
 function MapComponent({ points, customers, selectedPoint, result }) {
   const [zoomLevel, setZoomLevel] = useState(13);
-  const showAllMarkers = zoomLevel >= 14;
+  const showAllMarkers = zoomLevel >= 16;
 
   const center = useMemo(() => {
     if (points.length > 0) {
@@ -207,6 +229,7 @@ function MapComponent({ points, customers, selectedPoint, result }) {
       />
 
       <ZoomTracker onZoomChange={setZoomLevel} />
+      <ZoomIndicator zoomLevel={zoomLevel} />
       <FitBoundsController result={result} />
 
       {visiblePoints.map(point => (
