@@ -9,37 +9,49 @@ dotenv.config();
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'distribution-points.json');
 
+const POP_KEYWORDS = ['pop', 'data center', 'datacenter', 'rgdc', 'clp', 'epz', 'airport', 'university'];
+const OWN_PATTERN = /\bown\b/i;
+
 function classifyType(name) {
   if (!name) return 'Splitter';
   const lower = String(name).toLowerCase().trim();
-  if (lower.includes('data center') || lower.includes('datacenter')) return 'POP';
-  if (lower.includes('rgdc')) return 'POP';
-  if (lower.includes('clp')) return 'POP';
-  if (/\bpop\b/.test(lower)) return 'POP';
-  if (/\bown\b/.test(lower)) return 'POP';
+
+  for (const kw of POP_KEYWORDS) {
+    if (lower.includes(kw)) return 'POP';
+  }
+
+  if (OWN_PATTERN.test(lower)) return 'POP';
+
+  if (!lower.includes(',')) return 'POP';
+
   return 'Splitter';
 }
 
 async function migrateTypes() {
   const docs = await DistributionPoint.find({});
-  let migrated = 0;
+  const bulkOps = [];
   let changed = 0;
 
   for (const doc of docs) {
     const newType = classifyType(doc.name);
     if (doc.type !== newType) {
-      doc.type = newType;
-      await doc.save();
+      bulkOps.push({
+        updateOne: {
+          filter: { _id: doc._id },
+          update: { $set: { type: newType, equipmentType: newType } }
+        }
+      });
       changed++;
     }
-    if (!doc.type) migrated++;
+  }
+
+  if (bulkOps.length > 0) {
+    const result = await DistributionPoint.bulkWrite(bulkOps);
+    console.log(`Updated ${result.modifiedCount} documents`);
   }
 
   if (changed > 0) {
-    console.log(`Reclassified ${changed} points (type corrected)`);
-  }
-  if (migrated > 0) {
-    console.log(`Migrated ${migrated} points from equipmentType to type`);
+    console.log(`Reclassified ${changed} points`);
   }
 }
 
@@ -54,7 +66,7 @@ async function seedSampleCustomers() {
     { customer_name: 'ACI Limited', latitude: 23.7589, longitude: 90.3939, details: 'Dhanmondi', pop_id: pops[0]._id },
     { customer_name: 'Square Toiletries', latitude: 23.7464, longitude: 90.3982, details: 'Dhanmondi', pop_id: pops[0]._id },
     { customer_name: 'BEXIMCO', latitude: 23.7873, longitude: 90.4005, details: 'Gulshan', pop_id: pops[0]._id },
-    { customer_name: 'DBBL Corporate', latitude: 23.7172, longitude: 90.4067, details: 'Gulshan-2', pop_id: pops[0]._id },
+    { customer_name: 'DBBL Corporate', latitude: 23.7172, longitude: 90.4167, details: 'Gulshan-2', pop_id: pops[0]._id },
     { customer_name: 'Robi Corporation', latitude: 23.7267, longitude: 90.4067, details: 'Gulshan-2', pop_id: pops[0]._id },
     { customer_name: 'Chittagong Port Authority', latitude: 22.3562, longitude: 91.8214, details: 'Agrabad', pop_id: pops[Math.min(2, pops.length - 1)]._id },
     { customer_name: 'Sylhet Agricultural Farm', latitude: 24.9037, longitude: 91.8602, details: 'Sylhet', pop_id: pops[Math.min(2, pops.length - 1)]._id },
