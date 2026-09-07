@@ -10,48 +10,40 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
 });
 
-const PIN_SVG = (color, label) => `
-  <svg width="28" height="38" viewBox="0 0 28 38" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 0C8.48 0 4 4.48 4 10c0 5.5 7 13 10 15.51C17 23 24 15.5 24 10c0-5.52-4.48-10-10-10z" fill="${color}" stroke="white" stroke-width="2"/>
-    <text x="14" y="15" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">${label}</text>
-  </svg>
-`;
+function svgToDataUri(svg) {
+  const encoded = encodeURIComponent(svg)
+    .replace(/'/g, '%27')
+    .replace(/</g, '%3C')
+    .replace(/>/g, '%3E');
+  return `data:image/svg+xml;charset=UTF-8,${encoded}`;
+}
 
-const popIcon = new L.DivIcon({
-  className: 'custom-pop-icon',
-  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#32CD32', 'P')}</div>`,
-  iconSize: [28, 38],
-  iconAnchor: [14, 38],
-  popupAnchor: [0, -40]
-});
+function createPinIcon(color, label) {
+  const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="38" viewBox="0 0 28 38">
+  <path d="M14 0C8.48 0 4 4.48 4 10c0 5.5 7 13 10 15.51C17 23 24 15.5 24 10c0-5.52-4.48-10-10-10z" fill="${color}" stroke="white" stroke-width="2"/>
+  <text x="14" y="15" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">${label}</text>
+</svg>`;
+  return L.icon({
+    iconUrl: svgToDataUri(svg),
+    iconSize: [28, 38],
+    iconAnchor: [14, 38],
+    popupAnchor: [0, -40],
+    className: 'custom-marker-icon',
+    shadowUrl: undefined
+  });
+}
 
-const splitterIcon = new L.DivIcon({
-  className: 'custom-splitter-icon',
-  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#FF6347', 'S')}</div>`,
-  iconSize: [28, 38],
-  iconAnchor: [14, 38],
-  popupAnchor: [0, -40]
-});
-
-const customerIcon = new L.DivIcon({
-  className: 'custom-customer-icon',
-  html: `<div style="width: 28px; height: 38px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#9370db', 'C')}</div>`,
-  iconSize: [28, 38],
-  iconAnchor: [14, 38],
-  popupAnchor: [0, -40]
-});
-
-const inputIcon = new L.DivIcon({
-  className: 'custom-input-icon',
-  html: `<div style="width: 20px; height: 20px; display: flex; align-items: center; justify-content: center;">${PIN_SVG('#2196f3', '')}</div>`,
-  iconSize: [28, 38],
-  iconAnchor: [14, 38],
-  popupAnchor: [0, -40]
-});
+const popIcon = createPinIcon('#32CD32', 'P');
+const splitterIcon = createPinIcon('#FF6347', 'S');
+const customerIcon = createPinIcon('#9370db', 'C');
+const inputIcon = createPinIcon('#2196f3', '');
 
 function getIconForType(type) {
-  if (type === 'POP') return popIcon;
-  if (type === 'Splitter') return splitterIcon;
+  if (!type) return undefined;
+  const t = String(type).trim().toUpperCase();
+  if (t === 'POP') return popIcon;
+  if (t === 'SPLITTER') return splitterIcon;
   return undefined;
 }
 
@@ -103,10 +95,15 @@ function PointMarker({ point }) {
     <CircleMarker
       center={[point.latitude, point.longitude]}
       radius={6}
-      pathOptions={{ color: '#32CD32', fillColor: '#32CD32', fillOpacity: 0.7 }}
+      pathOptions={{
+        color: point.type && String(point.type).trim().toUpperCase() === 'SPLITTER' ? '#FF6347' : '#32CD32',
+        fillColor: point.type && String(point.type).trim().toUpperCase() === 'SPLITTER' ? '#FF6347' : '#32CD32',
+        fillOpacity: 0.7
+      }}
     >
       <Popup>
         <strong>{point.name}</strong><br />
+        {point.type && <><strong>Type:</strong> {point.type}<br /></>}
         {point.latitude.toFixed(6)}, {point.longitude.toFixed(6)}<br />
         {point.address && <><br />{point.address}</>}
       </Popup>

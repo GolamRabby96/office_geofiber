@@ -9,57 +9,41 @@ dotenv.config();
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'distribution-points.json');
 
-const POP_KEYWORDS = ['pop', 'data center', 'rgdc', 'dc'];
-
 function classifyType(name) {
   if (!name) return 'Splitter';
-  const lower = String(name).toLowerCase();
-  for (const kw of POP_KEYWORDS) {
-    if (lower.includes(kw)) return 'POP';
-  }
+  const lower = String(name).toLowerCase().trim();
+  if (lower.includes('data center') || lower.includes('datacenter')) return 'POP';
+  if (lower.includes('rgdc')) return 'POP';
+  if (lower.includes('clp')) return 'POP';
+  if (/\bpop\b/.test(lower)) return 'POP';
+  if (/\bown\b/.test(lower)) return 'POP';
   return 'Splitter';
 }
 
 async function migrateTypes() {
-  const docs = await DistributionPoint.find({ type: { $exists: false } });
+  const docs = await DistributionPoint.find({});
   let migrated = 0;
+  let changed = 0;
 
   for (const doc of docs) {
-    if (doc.equipmentType && (doc.equipmentType === 'POP' || doc.equipmentType === 'Splitter')) {
-      doc.type = doc.equipmentType;
-    } else {
-      doc.type = classifyType(doc.name);
+    const newType = classifyType(doc.name);
+    if (doc.type !== newType) {
+      doc.type = newType;
+      await doc.save();
+      changed++;
     }
-
-    if (!doc.address && typeof doc.equipmentType === 'undefined') {
-    }
-
-    doc.equipmentType = doc.type;
-    await doc.save();
-    migrated++;
+    if (!doc.type) migrated++;
   }
 
+  if (changed > 0) {
+    console.log(`Reclassified ${changed} points (type corrected)`);
+  }
   if (migrated > 0) {
     console.log(`Migrated ${migrated} points from equipmentType to type`);
   }
-
-  await DistributionPoint.updateMany(
-    { type: { $in: ['pop', 'POP', 'Pop'] } },
-    { $set: { type: 'POP', equipmentType: 'POP' } }
-  );
-  await DistributionPoint.updateMany(
-    { type: { $in: ['splitter', 'Splitter', 'SPLITTER'] } },
-    { $set: { type: 'Splitter', equipmentType: 'Splitter' } }
-  );
 }
 
 async function seedSampleCustomers() {
-  const customerCount = await Customer.countDocuments();
-  if (customerCount > 0) {
-    console.log(`Database already has ${customerCount} customers`);
-    return;
-  }
-
   const pops = await DistributionPoint.find({ type: 'POP' });
   if (pops.length === 0) {
     console.log('No POP nodes found. Cannot seed sample customers.');
@@ -79,6 +63,7 @@ async function seedSampleCustomers() {
     { customer_name: 'Rangpur Textiles Ltd', latitude: 25.7412, longitude: 89.2843, details: 'Rangpur', pop_id: pops[Math.min(4, pops.length - 1)]._id }
   ];
 
+  await Customer.deleteMany({});
   await Customer.insertMany(sampleCustomers);
   console.log(`Seeded ${sampleCustomers.length} sample customers`);
 }
